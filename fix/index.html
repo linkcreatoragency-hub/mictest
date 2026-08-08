@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Microphone Not Working? Fix Guides for Every Platform</title>
+<meta name="description" content="Fix a microphone that is not working. Step-by-step guides for Windows 11, Windows 10, macOS, Chrome, Discord and Zoom, plus quiet mic and echo fixes.">
+<link rel="canonical" href="https://mictest.live/fix">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="MicTest.live">
+<meta property="og:title" content="Microphone Not Working? Fix Guides for Every Platform">
+<meta property="og:description" content="Fix a microphone that is not working. Step-by-step guides for Windows 11, Windows 10, macOS, Chrome, Discord and Zoom, plus quiet mic and echo fixes.">
+<meta property="og:url" content="https://mictest.live/fix">
+<meta property="og:image" content="https://mictest.live/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Microphone Not Working? Fix Guides for Every Platform">
+<meta name="twitter:description" content="Fix a microphone that is not working. Step-by-step guides for Windows 11, Windows 10, macOS, Chrome, Discord and Zoom, plus quiet mic and echo fixes.">
+<meta name="twitter:image" content="https://mictest.live/assets/og-image.png">
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Which guide should I start with?", "acceptedAnswer": {"@type": "Answer", "text": "Run the microphone test on this page first. If the meter moves, your hardware works and the problem is inside one specific application — go to the Discord or Zoom guide. If nothing moves, start with the guide for your operating system."}}, {"@type": "Question", "name": "Do I need to install anything?", "acceptedAnswer": {"@type": "Answer", "text": "No. Every test on this site runs in your browser, and every fix uses settings that already exist on your computer."}}, {"@type": "Question", "name": "Why does my mic work on this page but not in my app?", "acceptedAnswer": {"@type": "Answer", "text": "Browser permission and application permission are separate systems, and every app keeps its own input device selection. A working test here proves the hardware, drivers and operating system are fine, which narrows the problem to that one app's settings."}}, {"@type": "Question", "name": "Is my audio being recorded?", "acceptedAnswer": {"@type": "Answer", "text": "No. The test uses your browser's built-in microphone API and analyses the signal locally with the Web Audio API. Nothing is uploaded and nothing is stored on a server."}}, {"@type": "Question", "name": "My mic works but I sound terrible — is that covered?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The quiet microphone guide covers levels and gain staging, and the echo guide covers feedback and room reverberation, which are the two most common quality complaints."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Microphone troubleshooting guides", "url": "https://mictest.live/fix", "inLanguage": "en", "hasPart": [{"@type": "Article", "headline": "Microphone Not Working on Windows 11", "url": "https://mictest.live/fix/microphone-not-working-windows-11"}, {"@type": "Article", "headline": "Microphone Not Working on Windows 10", "url": "https://mictest.live/fix/microphone-not-working-windows-10"}, {"@type": "Article", "headline": "Microphone Not Working on Mac", "url": "https://mictest.live/fix/microphone-not-working-mac"}, {"@type": "Article", "headline": "Microphone Not Working in Chrome", "url": "https://mictest.live/fix/microphone-not-working-chrome"}, {"@type": "Article", "headline": "Discord Mic Not Working", "url": "https://mictest.live/fix/discord-mic-not-working"}, {"@type": "Article", "headline": "Zoom Microphone Not Working", "url": "https://mictest.live/fix/zoom-microphone-not-working"}, {"@type": "Article", "headline": "Microphone Too Quiet — How to Make It Louder", "url": "https://mictest.live/fix/microphone-too-quiet"}, {"@type": "Article", "headline": "Microphone Echo and Feedback — How to Stop It", "url": "https://mictest.live/fix/microphone-echo"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mictest.live/"}, {"@type": "ListItem", "position": 2, "name": "Fix Problems", "item": "https://mictest.live/fix"}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="container head-in">
+  <a class="logo" href="/" aria-label="MicTest.live home">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><path d="M12 17v4"/><path d="M8 21h8"/>
+    </svg>
+    <span class="wm">Mic<em>Test</em></span>
+  </a>
+  <button class="burger" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="main-nav" id="mainNav" aria-label="Main"><ul><li><a href="/">Mic Test</a></li><li><a href="/webcam-test">Webcam</a></li><li><a href="/speaker-test">Speakers</a></li><li><a href="/keyboard-test">Keyboard</a></li><li><a href="/mouse-test">Mouse</a></li><li><a href="/fix" class="on">Fix Problems</a></li><li><a href="/guides">Guides</a></li></ul></nav>
+</div>
+</header>
+<main id="main"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> <i>/</i> <span>Fix Problems</span></nav></div>
+<div class="page-head">
+<div class="container">
+<h1>Fix Microphone Problems — <em>Step by Step</em></h1>
+<p class="lede">Test your microphone here first, then pick the guide that matches your platform or application. Every guide gives the exact settings path and the order that resolves it fastest.</p>
+</div>
+</div>
+<div class="container tool-wrap">
+<div class="stage" id="micTool">
+  <div class="status" id="micStatus"><span class="dot"></span><span>Loading…</span></div>
+  <div class="field-row">
+    <div class="field"><label for="micSelect">Input device</label>
+      <select id="micSelect" disabled><option>Detecting microphones…</option></select></div>
+  </div>
+  <div class="btn-row">
+    <button class="btn btn-lg" id="micStart" type="button">Test My Microphone</button>
+    <button class="btn btn-alt" id="micStop" type="button" disabled>Stop</button>
+    <button class="btn btn-ghost" id="micRec" type="button" disabled>Record 5 seconds</button>
+  </div>
+  <div class="meter-wrap">
+    <div class="meter"><div class="fill" id="micFill"></div></div>
+    <div class="meter-labels"><span>−60 dB</span><span>−40</span><span>−20</span><span>−6</span><span>0 dB</span></div>
+    <div class="peak-row">
+      <span>Current: <b id="micCur">—</b></span><span>Peak: <b id="micPeak">—</b></span><span>Average: <b id="micAvg">—</b></span>
+    </div>
+  </div>
+  <div class="viz-grid">
+    <div><p class="viz-label">Waveform</p><canvas class="viz short" id="micWave"></canvas></div>
+    <div><p class="viz-label">Spectrum</p><canvas class="viz short" id="micSpec"></canvas></div>
+  </div>
+  <div class="tog-row">
+    <label class="tog"><input type="checkbox" id="optEC" checked> Echo cancellation</label>
+    <label class="tog"><input type="checkbox" id="optNS" checked> Noise suppression</label>
+    <label class="tog"><input type="checkbox" id="optAGC" checked> Auto gain control</label>
+  </div>
+  <div class="verdict" id="micVerdict"></div>
+  <div class="rec-list" id="micRecList"></div>
+  <div id="micInfo" style="margin-top:16px"></div>
+</div>
+</div>
+<section>
+<div class="container">
+<div class="sec-head"><h2>Choose your situation</h2><p>Eight guides covering the causes that account for almost every microphone problem.</p></div>
+<div class="cards"><a class="card" href="/fix/microphone-not-working-windows-11"><h3>Microphone Not Working on Windows 11</h3><p>Nine fixes in the order that actually solves it most often, with the exact settings path for each one. Run the test on…</p></a><a class="card" href="/fix/microphone-not-working-windows-10"><h3>Microphone Not Working on Windows 10</h3><p>The Windows 10 settings layout differs from Windows 11 in a few important places. These are the steps in the order that…</p></a><a class="card" href="/fix/microphone-not-working-mac"><h3>Microphone Not Working on Mac</h3><p>macOS handles microphone permission per application, which makes the fix precise once you know where to look. Here is…</p></a><a class="card" href="/fix/microphone-not-working-chrome"><h3>Microphone Not Working in Chrome</h3><p>Chrome keeps microphone permission per site, and a single accidental Block sticks until you clear it. Here is exactly…</p></a><a class="card" href="/fix/discord-mic-not-working"><h3>Discord Mic Not Working</h3><p>Start by proving the microphone itself works with the test above. If the meter moves here and Discord still hears…</p></a><a class="card" href="/fix/zoom-microphone-not-working"><h3>Zoom Microphone Not Working</h3><p>Before changing anything in Zoom, confirm the microphone itself works using the test above. Then work through these…</p></a><a class="card" href="/fix/microphone-too-quiet"><h3>Microphone Too Quiet — How to Make It Louder</h3><p>Use the meter above to see exactly how quiet your microphone is, then fix it at the right point in the chain. Raising…</p></a><a class="card" href="/fix/microphone-echo"><h3>Microphone Echo and Feedback — How to Stop It</h3><p>Echo has one cause and one reliable cure. Understand the loop and you can fix it in seconds, on any device and in any…</p></a></div>
+</div>
+</section>
+
+<section style="background:var(--soft)">
+<div class="container prose">
+<h2>How to narrow the problem down in 30 seconds</h2>
+<p>Microphone problems feel mysterious because there are so many places a signal can be blocked, but you can eliminate most of them with a single test.</p>
+<p><strong>Press the test button above and speak.</strong> If the meter moves, everything from the microphone capsule to your operating system to your browser is working correctly. That eliminates hardware, cables, drivers and OS permissions in one step, and means the fault is inside whichever application is failing — so go straight to the Discord, Zoom or Chrome guide.</p>
+<p><strong>If the meter does not move</strong>, try every device in the dropdown before concluding anything. Computers routinely default to a disconnected headset or a monitor's built-in microphone. If none of them react, the problem sits below the browser and you should open the guide for your operating system.</p>
+<p><strong>If the meter moves but nobody can hear you clearly</strong>, this is a quality problem rather than a connection problem. The quiet microphone guide covers levels and gain, and the echo guide covers feedback and room reverberation.</p>
+
+<h2>The three most common causes, in order</h2>
+<table>
+<thead><tr><th>Cause</th><th>Typical sign</th><th>Guide</th></tr></thead>
+<tbody>
+<tr><td>OS privacy setting blocking apps</td><td>Mic works in system settings but is silent in every app</td><td><a href="/fix/microphone-not-working-windows-11">Windows 11</a> · <a href="/fix/microphone-not-working-mac">macOS</a></td></tr>
+<tr><td>Wrong input device selected</td><td>Worked before a headset was plugged or unplugged</td><td><a href="/fix/microphone-not-working-windows-10">Windows 10</a></td></tr>
+<tr><td>App-level sensitivity or permission</td><td>Works everywhere except one program</td><td><a href="/fix/discord-mic-not-working">Discord</a> · <a href="/fix/zoom-microphone-not-working">Zoom</a></td></tr>
+</tbody>
+</table>
+<div class="note"><p>Before any of this, check for a physical mute switch on your headset cable, on the microphone body, or on a laptop function key. It is the fastest thing to rule out and it accounts for a real share of cases.</p></div>
+</div>
+</section>
+<section class="faq-sec">
+<div class="container">
+<h2>Microphone troubleshooting FAQ</h2>
+<div class="faq-list"><details class="faq-item"><summary>Which guide should I start with?</summary><div class="faq-a"><p>Run the microphone test on this page first. If the meter moves, your hardware works and the problem is inside one specific application — go to the Discord or Zoom guide. If nothing moves, start with the guide for your operating system.</p></div></details><details class="faq-item"><summary>Do I need to install anything?</summary><div class="faq-a"><p>No. Every test on this site runs in your browser, and every fix uses settings that already exist on your computer.</p></div></details><details class="faq-item"><summary>Why does my mic work on this page but not in my app?</summary><div class="faq-a"><p>Browser permission and application permission are separate systems, and every app keeps its own input device selection. A working test here proves the hardware, drivers and operating system are fine, which narrows the problem to that one app's settings.</p></div></details><details class="faq-item"><summary>Is my audio being recorded?</summary><div class="faq-a"><p>No. The test uses your browser's built-in microphone API and analyses the signal locally with the Web Audio API. Nothing is uploaded and nothing is stored on a server.</p></div></details><details class="faq-item"><summary>My mic works but I sound terrible — is that covered?</summary><div class="faq-a"><p>Yes. The quiet microphone guide covers levels and gain staging, and the echo guide covers feedback and room reverberation, which are the two most common quality complaints.</p></div></details></div>
+</div>
+</section><section class="cta">
+<div class="container">
+<h2>Everything checks out?</h2>
+<p>Run the rest of the device tests — webcam, speakers, keyboard, mouse and screen.</p>
+<a class="btn btn-lg" href="/webcam-test">Open the webcam test</a>
+</div>
+</section></main><footer class="site-foot">
+<div class="container">
+  <div class="foot-grid"><div><h2 class="foot-h">Device Tests</h2><ul><li><a href="/">Microphone Test</a></li><li><a href="/webcam-test">Webcam Test</a></li><li><a href="/speaker-test">Speaker Test</a></li><li><a href="/headphone-test">Headphone Test</a></li><li><a href="/dead-pixel-test">Dead Pixel Test</a></li></ul></div><div><h2 class="foot-h">Input Tests</h2><ul><li><a href="/keyboard-test">Keyboard Test</a></li><li><a href="/mouse-test">Mouse Test</a></li><li><a href="/click-test">Click Speed Test</a></li><li><a href="/double-click-test">Double Click Test</a></li></ul></div><div><h2 class="foot-h">Fix Mic Problems</h2><ul><li><a href="/fix/microphone-not-working-windows-11">Windows 11 Mic Not Working</a></li><li><a href="/fix/microphone-not-working-mac">Mac Mic Not Working</a></li><li><a href="/fix/discord-mic-not-working">Discord Mic Not Working</a></li><li><a href="/fix/zoom-microphone-not-working">Zoom Mic Not Working</a></li><li><a href="/fix">All Fix Guides</a></li></ul></div><div><h2 class="foot-h">Site</h2><ul><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li><li><a href="/privacy">Privacy Policy</a></li><li><a href="/terms">Terms of Use</a></li><li><a href="/disclaimer">Disclaimer</a></li></ul></div></div>
+  <p class="foot-note">Every test on MicTest.live runs entirely inside your browser. Audio and video from your microphone and camera are processed on your device and never uploaded, recorded on a server, or shared with anyone.</p>
+  <p class="copy">© 2026 MicTest.live — free online device tests.</p>
+</div>
+</footer>
+<script src="/app.js" defer></script>
+</body>
+</html>

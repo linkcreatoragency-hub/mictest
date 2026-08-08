@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Microphone Not Working on Windows 10 — Step by Step Fix</title>
+<meta name="description" content="Fix a Windows 10 microphone that produces no sound: privacy settings, default device, levels, exclusive mode and driver steps, with a live mic test.">
+<link rel="canonical" href="https://mictest.live/fix/microphone-not-working-windows-10">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="MicTest.live">
+<meta property="og:title" content="Microphone Not Working on Windows 10 — Step by Step Fix">
+<meta property="og:description" content="Fix a Windows 10 microphone that produces no sound: privacy settings, default device, levels, exclusive mode and driver steps, with a live mic test.">
+<meta property="og:url" content="https://mictest.live/fix/microphone-not-working-windows-10">
+<meta property="og:image" content="https://mictest.live/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Microphone Not Working on Windows 10 — Step by Step Fix">
+<meta name="twitter:description" content="Fix a Windows 10 microphone that produces no sound: privacy settings, default device, levels, exclusive mode and driver steps, with a live mic test.">
+<meta name="twitter:image" content="https://mictest.live/assets/og-image.png">
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "Microphone Not Working on Windows 10", "description": "Fix a Windows 10 microphone that produces no sound: privacy settings, default device, levels, exclusive mode and driver steps, with a live mic test.", "url": "https://mictest.live/fix/microphone-not-working-windows-10", "totalTime": "PT3M", "step": [{"@type": "HowToStep", "position": 1, "name": "Check for a hardware mute", "text": "Headset cables, USB microphone bodies and many laptop keyboards carry a mute control that Windows knows nothing about. Look for a microphone icon on your function keys and for an inline switch on any headset cable."}, {"@type": "HowToStep", "position": 2, "name": "Enable microphone access in Privacy", "text": "Open Settings, then Privacy, then Microphone. Under “Allow access to the microphone on this device”, click Change and set it to On. Then turn on “Allow apps to access your microphone”. Scroll to the bottom for “Allow desktop apps to access your microphone” — this separate switch controls browsers and most installed programs, and it is the one that usually blocks everything."}, {"@type": "HowToStep", "position": 3, "name": "Set the correct default device", "text": "Right-click the speaker icon in the taskbar and choose “Open Sound settings”. Under Input, choose your microphone from the dropdown, then speak and watch the “Test your microphone” bar move. If it does not move, try each device in the list."}, {"@type": "HowToStep", "position": 4, "name": "Enable the device in the Sound control panel", "text": "In Sound settings, click “Sound Control Panel” on the right, then open the Recording tab. Right-click in the empty space and tick both “Show Disabled Devices” and “Show Disconnected Devices”. If your microphone appears greyed out, right-click it and choose Enable, then Set as Default Device."}, {"@type": "HowToStep", "position": 5, "name": "Raise levels and add boost", "text": "Still in the Recording tab, double-click your microphone and open the Levels tab. Set Microphone to 100. If a Microphone Boost slider is present, raise it to +10 or +20 dB. Small increments matter here — too much boost amplifies hiss along with your voice."}, {"@type": "HowToStep", "position": 6, "name": "Turn off exclusive mode and enhancements", "text": "In the same properties window, open the Advanced tab and untick “Allow applications to take exclusive control of this device”. Then open the Enhancements tab, if present, and tick “Disable all sound effects”. Exclusive mode is a frequent cause of a microphone that works in one app and is dead in every other."}, {"@type": "HowToStep", "position": 7, "name": "Restart the audio services", "text": "Press Windows+R, type services.msc, press Enter, then restart both “Windows Audio” and “Windows Audio Endpoint Builder”. Set both to Automatic startup if they are not already."}, {"@type": "HowToStep", "position": 8, "name": "Update or roll back the driver", "text": "Open Device Manager, expand “Audio inputs and outputs”, right-click the microphone and choose Update driver. If the fault started right after a driver update, choose Properties instead and use “Roll Back Driver” on the Driver tab — that button is only available if a previous version is still stored."}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Where is the microphone privacy setting in Windows 10?", "acceptedAnswer": {"@type": "Answer", "text": "Settings, then Privacy, then Microphone in the left column. Remember the third switch near the bottom for desktop apps — it controls browsers and most installed software."}}, {"@type": "Question", "name": "How do I enable a greyed-out microphone?", "acceptedAnswer": {"@type": "Answer", "text": "Open the Sound control panel, go to the Recording tab, right-click in the empty area, tick “Show Disabled Devices”, then right-click your microphone and choose Enable."}}, {"@type": "Question", "name": "Why is my microphone very quiet on Windows 10?", "acceptedAnswer": {"@type": "Answer", "text": "Set the Levels slider to 100 and add Microphone Boost of +10 to +20 dB in the device properties. If it is still quiet, the microphone may be plugged into a line-in jack rather than a microphone jack."}}, {"@type": "Question", "name": "What does exclusive mode do?", "acceptedAnswer": {"@type": "Answer", "text": "It lets one application lock a device for itself. Turning it off in the Advanced tab restores the microphone for every other program and has no downside for normal use."}}, {"@type": "Question", "name": "Should I roll back or update the driver?", "acceptedAnswer": {"@type": "Answer", "text": "If the microphone stopped working right after an update, roll back. If it has never worked or has been failing for a long time, update — or uninstall the device and restart to let Windows reinstall it cleanly."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Microphone Not Working on Windows 10 — Step by Step Fix", "description": "Fix a Windows 10 microphone that produces no sound: privacy settings, default device, levels, exclusive mode and driver steps, with a live mic test.", "inLanguage": "en", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://mictest.live/fix/microphone-not-working-windows-10"}, "datePublished": "2026-08-08", "dateModified": "2026-08-08", "author": {"@type": "Organization", "name": "MicTest.live", "url": "https://mictest.live"}, "publisher": {"@type": "Organization", "name": "MicTest.live", "url": "https://mictest.live", "logo": {"@type": "ImageObject", "url": "https://mictest.live/favicon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mictest.live/"}, {"@type": "ListItem", "position": 2, "name": "Fix Problems", "item": "https://mictest.live/fix"}, {"@type": "ListItem", "position": 3, "name": "Microphone Not Working on Windows 10", "item": "https://mictest.live/fix/microphone-not-working-windows-10"}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="container head-in">
+  <a class="logo" href="/" aria-label="MicTest.live home">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><path d="M12 17v4"/><path d="M8 21h8"/>
+    </svg>
+    <span class="wm">Mic<em>Test</em></span>
+  </a>
+  <button class="burger" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="main-nav" id="mainNav" aria-label="Main"><ul><li><a href="/">Mic Test</a></li><li><a href="/webcam-test">Webcam</a></li><li><a href="/speaker-test">Speakers</a></li><li><a href="/keyboard-test">Keyboard</a></li><li><a href="/mouse-test">Mouse</a></li><li><a href="/fix" class="on">Fix Problems</a></li><li><a href="/guides">Guides</a></li></ul></nav>
+</div>
+</header>
+<main id="main"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> <i>/</i> <a href="/fix">Fix Problems</a> <i>/</i> <span>Microphone Not Working on Windows 10</span></nav></div>
+<div class="page-head">
+<div class="container">
+<h1>Microphone Not Working on Windows 10</h1>
+<p class="lede">The Windows 10 settings layout differs from Windows 11 in a few important places. These are the steps in the order that resolves it fastest, with the exact paths for Windows 10.</p>
+</div>
+</div>
+<div class="container tool-wrap">
+<div class="stage" id="micTool">
+  <div class="status" id="micStatus"><span class="dot"></span><span>Loading…</span></div>
+  <div class="field-row">
+    <div class="field"><label for="micSelect">Input device</label>
+      <select id="micSelect" disabled><option>Detecting microphones…</option></select></div>
+  </div>
+  <div class="btn-row">
+    <button class="btn btn-lg" id="micStart" type="button">Test My Microphone</button>
+    <button class="btn btn-alt" id="micStop" type="button" disabled>Stop</button>
+    <button class="btn btn-ghost" id="micRec" type="button" disabled>Record 5 seconds</button>
+  </div>
+  <div class="meter-wrap">
+    <div class="meter"><div class="fill" id="micFill"></div></div>
+    <div class="meter-labels"><span>−60 dB</span><span>−40</span><span>−20</span><span>−6</span><span>0 dB</span></div>
+    <div class="peak-row">
+      <span>Current: <b id="micCur">—</b></span><span>Peak: <b id="micPeak">—</b></span><span>Average: <b id="micAvg">—</b></span>
+    </div>
+  </div>
+  <div class="viz-grid">
+    <div><p class="viz-label">Waveform</p><canvas class="viz short" id="micWave"></canvas></div>
+    <div><p class="viz-label">Spectrum</p><canvas class="viz short" id="micSpec"></canvas></div>
+  </div>
+  <div class="tog-row">
+    <label class="tog"><input type="checkbox" id="optEC" checked> Echo cancellation</label>
+    <label class="tog"><input type="checkbox" id="optNS" checked> Noise suppression</label>
+    <label class="tog"><input type="checkbox" id="optAGC" checked> Auto gain control</label>
+  </div>
+  <div class="verdict" id="micVerdict"></div>
+  <div class="rec-list" id="micRecList"></div>
+  <div id="micInfo" style="margin-top:16px"></div>
+</div>
+</div>
+<section>
+<div class="container prose">
+<h2>Start here</h2>
+<p>Windows 10 splits microphone control across two different settings systems: the modern Settings app and the older Sound control panel inherited from earlier versions. Some options exist in only one of them, which is why following a Windows 11 guide on a Windows 10 machine often leads nowhere.</p><p>Run the microphone test above first so you have a baseline, then work down the list. Most cases are resolved by step three.</p>
+<h2>Fixes, in the order to try them</h2><ol class="steps"><li><h3>Check for a hardware mute</h3><p>Headset cables, USB microphone bodies and many laptop keyboards carry a mute control that Windows knows nothing about. Look for a microphone icon on your function keys and for an inline switch on any headset cable.</p></li><li><h3>Enable microphone access in Privacy</h3><p>Open Settings, then Privacy, then Microphone. Under “Allow access to the microphone on this device”, click Change and set it to On. Then turn on “Allow apps to access your microphone”. Scroll to the bottom for “Allow desktop apps to access your microphone” — this separate switch controls browsers and most installed programs, and it is the one that usually blocks everything.</p></li><li><h3>Set the correct default device</h3><p>Right-click the speaker icon in the taskbar and choose “Open Sound settings”. Under Input, choose your microphone from the dropdown, then speak and watch the “Test your microphone” bar move. If it does not move, try each device in the list.</p></li><li><h3>Enable the device in the Sound control panel</h3><p>In Sound settings, click “Sound Control Panel” on the right, then open the Recording tab. Right-click in the empty space and tick both “Show Disabled Devices” and “Show Disconnected Devices”. If your microphone appears greyed out, right-click it and choose Enable, then Set as Default Device.</p></li><li><h3>Raise levels and add boost</h3><p>Still in the Recording tab, double-click your microphone and open the Levels tab. Set Microphone to 100. If a Microphone Boost slider is present, raise it to +10 or +20 dB. Small increments matter here — too much boost amplifies hiss along with your voice.</p></li><li><h3>Turn off exclusive mode and enhancements</h3><p>In the same properties window, open the Advanced tab and untick “Allow applications to take exclusive control of this device”. Then open the Enhancements tab, if present, and tick “Disable all sound effects”. Exclusive mode is a frequent cause of a microphone that works in one app and is dead in every other.</p></li><li><h3>Restart the audio services</h3><p>Press Windows+R, type services.msc, press Enter, then restart both “Windows Audio” and “Windows Audio Endpoint Builder”. Set both to Automatic startup if they are not already.</p></li><li><h3>Update or roll back the driver</h3><p>Open Device Manager, expand “Audio inputs and outputs”, right-click the microphone and choose Update driver. If the fault started right after a driver update, choose Properties instead and use “Roll Back Driver” on the Driver tab — that button is only available if a previous version is still stored.</p></li></ol>
+<h2>Exclusive mode: the fix people never find</h2><p>Windows lets an application request exclusive control of an audio device, which locks every other program out. It exists so that professional audio software can get the lowest possible latency, and it causes real trouble on ordinary machines.</p><p>The symptom is very specific: the microphone works perfectly in one application, and every other application reports it as missing or silent — often with no error message at all. Unticking the exclusive control option in the Advanced tab resolves it permanently, and there is no downside for normal use.</p><h2>Two settings apps, one microphone</h2><p>Windows 10 shows microphone settings in both the Settings app and the legacy Sound control panel, and they do not expose the same options. Levels, boost, exclusive mode, enhancements and the ability to enable a disabled device all live only in the old control panel.</p><p>The quickest route there is to right-click the speaker icon in the taskbar, choose Open Sound settings, and click “Sound Control Panel” in the right-hand column. Bookmark that path — most stubborn microphone problems are solved on the Recording tab it opens.</p><h2>Realtek and vendor audio software</h2><p>Many Windows 10 laptops ship with a vendor audio suite layered on top of the Microsoft driver: Realtek Audio Console, Nahimic, Waves MaxxAudio, Dell Audio or similar. These have their own microphone settings that override the Windows ones, including noise suppression that can gate speech entirely.</p><p>If a microphone behaves inconsistently, open that vendor application and either disable its microphone effects or reset it to defaults. If the software has been uninstalled but its driver remains, the effects can persist with no interface to turn them off, in which case reinstalling the vendor package to disable them properly is the cleanest path.</p>
+<h2>Other fix guides</h2>
+<p>If this was not your problem, one of these probably is. Each guide covers a different platform or application, with the exact settings path for that one:</p>
+<div class="link-grid"><a href="/fix/microphone-not-working-windows-11">Microphone Not Working on Windows 11</a><a href="/fix/microphone-not-working-mac">Microphone Not Working on Mac</a><a href="/fix/microphone-not-working-chrome">Microphone Not Working in Chrome</a><a href="/fix/discord-mic-not-working">Discord Mic Not Working</a><a href="/fix/zoom-microphone-not-working">Zoom Microphone Not Working</a><a href="/fix/microphone-too-quiet">Microphone Too Quiet — How to Make It Louder</a><a href="/fix/microphone-echo">Microphone Echo and Feedback — How to Stop It</a></div>
+</div>
+</section>
+<section class="faq-sec">
+<div class="container">
+<h2>Microphone Not Working on Windows 10 — FAQ</h2>
+<div class="faq-list"><details class="faq-item"><summary>Where is the microphone privacy setting in Windows 10?</summary><div class="faq-a"><p>Settings, then Privacy, then Microphone in the left column. Remember the third switch near the bottom for desktop apps — it controls browsers and most installed software.</p></div></details><details class="faq-item"><summary>How do I enable a greyed-out microphone?</summary><div class="faq-a"><p>Open the Sound control panel, go to the Recording tab, right-click in the empty area, tick “Show Disabled Devices”, then right-click your microphone and choose Enable.</p></div></details><details class="faq-item"><summary>Why is my microphone very quiet on Windows 10?</summary><div class="faq-a"><p>Set the Levels slider to 100 and add Microphone Boost of +10 to +20 dB in the device properties. If it is still quiet, the microphone may be plugged into a line-in jack rather than a microphone jack.</p></div></details><details class="faq-item"><summary>What does exclusive mode do?</summary><div class="faq-a"><p>It lets one application lock a device for itself. Turning it off in the Advanced tab restores the microphone for every other program and has no downside for normal use.</p></div></details><details class="faq-item"><summary>Should I roll back or update the driver?</summary><div class="faq-a"><p>If the microphone stopped working right after an update, roll back. If it has never worked or has been failing for a long time, update — or uninstall the device and restart to let Windows reinstall it cleanly.</p></div></details></div>
+</div>
+</section>
+<section class="cta">
+<div class="container">
+<h2>Test the rest of your setup</h2>
+<p>Webcam, speakers, keyboard, mouse and screen — all free, all running locally in your browser.</p>
+<a class="btn btn-lg" href="/webcam-test">See all device tests</a>
+</div>
+</section>
+</main><footer class="site-foot">
+<div class="container">
+  <div class="foot-grid"><div><h2 class="foot-h">Device Tests</h2><ul><li><a href="/">Microphone Test</a></li><li><a href="/webcam-test">Webcam Test</a></li><li><a href="/speaker-test">Speaker Test</a></li><li><a href="/headphone-test">Headphone Test</a></li><li><a href="/dead-pixel-test">Dead Pixel Test</a></li></ul></div><div><h2 class="foot-h">Input Tests</h2><ul><li><a href="/keyboard-test">Keyboard Test</a></li><li><a href="/mouse-test">Mouse Test</a></li><li><a href="/click-test">Click Speed Test</a></li><li><a href="/double-click-test">Double Click Test</a></li></ul></div><div><h2 class="foot-h">Fix Mic Problems</h2><ul><li><a href="/fix/microphone-not-working-windows-11">Windows 11 Mic Not Working</a></li><li><a href="/fix/microphone-not-working-mac">Mac Mic Not Working</a></li><li><a href="/fix/discord-mic-not-working">Discord Mic Not Working</a></li><li><a href="/fix/zoom-microphone-not-working">Zoom Mic Not Working</a></li><li><a href="/fix">All Fix Guides</a></li></ul></div><div><h2 class="foot-h">Site</h2><ul><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li><li><a href="/privacy">Privacy Policy</a></li><li><a href="/terms">Terms of Use</a></li><li><a href="/disclaimer">Disclaimer</a></li></ul></div></div>
+  <p class="foot-note">Every test on MicTest.live runs entirely inside your browser. Audio and video from your microphone and camera are processed on your device and never uploaded, recorded on a server, or shared with anyone.</p>
+  <p class="copy">© 2026 MicTest.live — free online device tests.</p>
+</div>
+</footer>
+<script src="/app.js" defer></script>
+</body>
+</html>

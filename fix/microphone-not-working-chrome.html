@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Microphone Not Working in Chrome — Permissions Fix</title>
+<meta name="description" content="Fix microphone access in Google Chrome: reset a blocked site permission, set the default input device and check OS-level access, with a live mic test.">
+<link rel="canonical" href="https://mictest.live/fix/microphone-not-working-chrome">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="MicTest.live">
+<meta property="og:title" content="Microphone Not Working in Chrome — Permissions Fix">
+<meta property="og:description" content="Fix microphone access in Google Chrome: reset a blocked site permission, set the default input device and check OS-level access, with a live mic test.">
+<meta property="og:url" content="https://mictest.live/fix/microphone-not-working-chrome">
+<meta property="og:image" content="https://mictest.live/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Microphone Not Working in Chrome — Permissions Fix">
+<meta name="twitter:description" content="Fix microphone access in Google Chrome: reset a blocked site permission, set the default input device and check OS-level access, with a live mic test.">
+<meta name="twitter:image" content="https://mictest.live/assets/og-image.png">
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "Microphone Not Working in Chrome", "description": "Fix microphone access in Google Chrome: reset a blocked site permission, set the default input device and check OS-level access, with a live mic test.", "url": "https://mictest.live/fix/microphone-not-working-chrome", "totalTime": "PT3M", "step": [{"@type": "HowToStep", "position": 1, "name": "Reset the permission for this site", "text": "Click the padlock or the sliders icon at the left of the address bar, then choose Site settings. Find Microphone and set it to Allow, or press the Reset permission button. Reload the page and press the test button again — the prompt should reappear."}, {"@type": "HowToStep", "position": 2, "name": "Check Chrome's global microphone setting", "text": "Paste chrome://settings/content/microphone into the address bar. Make sure “Sites can ask to use your microphone” is selected. Below it are two lists: sites allowed and sites blocked. If the site you need is in the blocked list, remove it with the bin icon."}, {"@type": "HowToStep", "position": 3, "name": "Pick the right input device in Chrome", "text": "On the same chrome://settings/content/microphone page there is a device dropdown at the top. Chrome remembers this independently of your operating system's default, so a system change does not always follow through. Select the microphone you actually use."}, {"@type": "HowToStep", "position": 4, "name": "Confirm the operating system allows Chrome", "text": "On Windows, open Settings, Privacy &amp; security, Microphone and make sure “Let desktop apps access your microphone” is on. On macOS, open System Settings, Privacy &amp; Security, Microphone and switch Chrome on. Chrome cannot grant itself access the OS has denied."}, {"@type": "HowToStep", "position": 5, "name": "Make sure the page is on HTTPS", "text": "Chrome only allows microphone access on secure origins. If the address bar shows “Not secure”, the request is refused before any prompt appears. Every page on this site is served over HTTPS."}, {"@type": "HowToStep", "position": 6, "name": "Test in an Incognito window", "text": "Press Ctrl+Shift+N, or Cmd+Shift+N on a Mac, and open the same page. Incognito starts with no stored permissions and most extensions disabled. If the microphone works there, an extension or a stored setting in your normal profile is the cause."}, {"@type": "HowToStep", "position": 7, "name": "Disable extensions one at a time", "text": "Open chrome://extensions and switch everything off, then test. Privacy tools, ad blockers, VPN extensions and some meeting assistants intercept media requests. Re-enable them one by one to find the culprit."}, {"@type": "HowToStep", "position": 8, "name": "Update or reset Chrome", "text": "Open chrome://settings/help to install any pending update and restart. If nothing else has worked, chrome://settings/reset restores default settings without touching your bookmarks or saved passwords."}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I unblock the microphone in Chrome?", "acceptedAnswer": {"@type": "Answer", "text": "Click the padlock at the left of the address bar, open Site settings, and set Microphone to Allow — or use the Reset permission button, then reload the page."}}, {"@type": "Question", "name": "Where is the microphone setting in Chrome?", "acceptedAnswer": {"@type": "Answer", "text": "chrome://settings/content/microphone. It holds the global on/off switch, the default input device, and the allowed and blocked site lists."}}, {"@type": "Question", "name": "Why does Chrome use the wrong microphone?", "acceptedAnswer": {"@type": "Answer", "text": "Chrome stores its own default input device separately from your operating system. Change it in the dropdown at chrome://settings/content/microphone."}}, {"@type": "Question", "name": "Chrome does not ask for permission at all.", "acceptedAnswer": {"@type": "Answer", "text": "Either the site was blocked previously, or the page is not on HTTPS. Check the crossed-out microphone icon in the address bar, and confirm the address begins with https."}}, {"@type": "Question", "name": "Does Incognito mode affect the microphone?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, usefully. Incognito starts without stored permissions and with most extensions disabled, so it is a fast way to tell whether your profile is the problem."}}, {"@type": "Question", "name": "Do these steps work in Microsoft Edge?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Edge is Chromium-based; use edge://settings/content/microphone. The same applies to Brave, Opera and Vivaldi with their own scheme names."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Microphone Not Working in Chrome — Permissions Fix", "description": "Fix microphone access in Google Chrome: reset a blocked site permission, set the default input device and check OS-level access, with a live mic test.", "inLanguage": "en", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://mictest.live/fix/microphone-not-working-chrome"}, "datePublished": "2026-08-08", "dateModified": "2026-08-08", "author": {"@type": "Organization", "name": "MicTest.live", "url": "https://mictest.live"}, "publisher": {"@type": "Organization", "name": "MicTest.live", "url": "https://mictest.live", "logo": {"@type": "ImageObject", "url": "https://mictest.live/favicon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mictest.live/"}, {"@type": "ListItem", "position": 2, "name": "Fix Problems", "item": "https://mictest.live/fix"}, {"@type": "ListItem", "position": 3, "name": "Microphone Not Working in Chrome", "item": "https://mictest.live/fix/microphone-not-working-chrome"}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="container head-in">
+  <a class="logo" href="/" aria-label="MicTest.live home">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><path d="M12 17v4"/><path d="M8 21h8"/>
+    </svg>
+    <span class="wm">Mic<em>Test</em></span>
+  </a>
+  <button class="burger" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="main-nav" id="mainNav" aria-label="Main"><ul><li><a href="/">Mic Test</a></li><li><a href="/webcam-test">Webcam</a></li><li><a href="/speaker-test">Speakers</a></li><li><a href="/keyboard-test">Keyboard</a></li><li><a href="/mouse-test">Mouse</a></li><li><a href="/fix" class="on">Fix Problems</a></li><li><a href="/guides">Guides</a></li></ul></nav>
+</div>
+</header>
+<main id="main"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> <i>/</i> <a href="/fix">Fix Problems</a> <i>/</i> <span>Microphone Not Working in Chrome</span></nav></div>
+<div class="page-head">
+<div class="container">
+<h1>Microphone Not Working in Chrome</h1>
+<p class="lede">Chrome keeps microphone permission per site, and a single accidental Block sticks until you clear it. Here is exactly where those settings live.</p>
+</div>
+</div>
+<div class="container tool-wrap">
+<div class="stage" id="micTool">
+  <div class="status" id="micStatus"><span class="dot"></span><span>Loading…</span></div>
+  <div class="field-row">
+    <div class="field"><label for="micSelect">Input device</label>
+      <select id="micSelect" disabled><option>Detecting microphones…</option></select></div>
+  </div>
+  <div class="btn-row">
+    <button class="btn btn-lg" id="micStart" type="button">Test My Microphone</button>
+    <button class="btn btn-alt" id="micStop" type="button" disabled>Stop</button>
+    <button class="btn btn-ghost" id="micRec" type="button" disabled>Record 5 seconds</button>
+  </div>
+  <div class="meter-wrap">
+    <div class="meter"><div class="fill" id="micFill"></div></div>
+    <div class="meter-labels"><span>−60 dB</span><span>−40</span><span>−20</span><span>−6</span><span>0 dB</span></div>
+    <div class="peak-row">
+      <span>Current: <b id="micCur">—</b></span><span>Peak: <b id="micPeak">—</b></span><span>Average: <b id="micAvg">—</b></span>
+    </div>
+  </div>
+  <div class="viz-grid">
+    <div><p class="viz-label">Waveform</p><canvas class="viz short" id="micWave"></canvas></div>
+    <div><p class="viz-label">Spectrum</p><canvas class="viz short" id="micSpec"></canvas></div>
+  </div>
+  <div class="tog-row">
+    <label class="tog"><input type="checkbox" id="optEC" checked> Echo cancellation</label>
+    <label class="tog"><input type="checkbox" id="optNS" checked> Noise suppression</label>
+    <label class="tog"><input type="checkbox" id="optAGC" checked> Auto gain control</label>
+  </div>
+  <div class="verdict" id="micVerdict"></div>
+  <div class="rec-list" id="micRecList"></div>
+  <div id="micInfo" style="margin-top:16px"></div>
+</div>
+</div>
+<section>
+<div class="container prose">
+<h2>Start here</h2>
+<p>When a microphone works everywhere except in Chrome — or works on one website and not another — the cause is almost always Chrome's per-site permission model rather than anything to do with your hardware.</p><p>Chrome stores an allow or block decision for every site that asks. Click Block once, even by accident, and that site is silently denied from then on with no further prompt. Below is how to inspect and reset those decisions, plus the device selection Chrome keeps separately from your operating system.</p>
+<h2>Fixes, in the order to try them</h2><ol class="steps"><li><h3>Reset the permission for this site</h3><p>Click the padlock or the sliders icon at the left of the address bar, then choose Site settings. Find Microphone and set it to Allow, or press the Reset permission button. Reload the page and press the test button again — the prompt should reappear.</p></li><li><h3>Check Chrome's global microphone setting</h3><p>Paste chrome://settings/content/microphone into the address bar. Make sure “Sites can ask to use your microphone” is selected. Below it are two lists: sites allowed and sites blocked. If the site you need is in the blocked list, remove it with the bin icon.</p></li><li><h3>Pick the right input device in Chrome</h3><p>On the same chrome://settings/content/microphone page there is a device dropdown at the top. Chrome remembers this independently of your operating system's default, so a system change does not always follow through. Select the microphone you actually use.</p></li><li><h3>Confirm the operating system allows Chrome</h3><p>On Windows, open Settings, Privacy &amp; security, Microphone and make sure “Let desktop apps access your microphone” is on. On macOS, open System Settings, Privacy &amp; Security, Microphone and switch Chrome on. Chrome cannot grant itself access the OS has denied.</p></li><li><h3>Make sure the page is on HTTPS</h3><p>Chrome only allows microphone access on secure origins. If the address bar shows “Not secure”, the request is refused before any prompt appears. Every page on this site is served over HTTPS.</p></li><li><h3>Test in an Incognito window</h3><p>Press Ctrl+Shift+N, or Cmd+Shift+N on a Mac, and open the same page. Incognito starts with no stored permissions and most extensions disabled. If the microphone works there, an extension or a stored setting in your normal profile is the cause.</p></li><li><h3>Disable extensions one at a time</h3><p>Open chrome://extensions and switch everything off, then test. Privacy tools, ad blockers, VPN extensions and some meeting assistants intercept media requests. Re-enable them one by one to find the culprit.</p></li><li><h3>Update or reset Chrome</h3><p>Open chrome://settings/help to install any pending update and restart. If nothing else has worked, chrome://settings/reset restores default settings without touching your bookmarks or saved passwords.</p></li></ol>
+<h2>Why the prompt never appears again</h2><p>Chrome only asks once per site. Choose Block, and every future request from that site is refused silently — no prompt, no error dialog, just a microphone that never starts. Many people assume the site is broken.</p><p>The tell-tale sign is a small crossed-out microphone icon at the right of the address bar. Clicking it reveals the current decision and offers to change it. Resetting the permission and reloading brings the prompt back.</p><h2>Two separate device selections</h2><p>Chrome keeps its own default input device, separate from the one your operating system uses. Plug in a headset, set it as the system default, and Chrome may still capture from the laptop's built-in microphone.</p><p>The dropdown at chrome://settings/content/microphone is where Chrome's choice lives. Many sites, including this one, also offer an in-page device selector, which overrides Chrome's default for that page only. If a call app sounds like it is using the wrong microphone, check all three levels: the operating system, Chrome, and the app.</p><h2>Edge, Brave, Opera and Vivaldi</h2><p>All of these are built on Chromium and behave the same way, with the same settings pages under their own scheme name — for example edge://settings/content/microphone or brave://settings/content/microphone. Every step above applies with the scheme changed.</p><p>Brave adds an extra layer through its Shields feature, which can block media requests on some sites. If a page works in Chrome but not in Brave, lower Shields for that site before investigating anything else. Firefox uses a different model entirely: it prompts each time unless you tick “Remember this decision”, and stored choices are cleared from Settings, Privacy &amp; Security, Permissions, Microphone.</p>
+<h2>Other fix guides</h2>
+<p>If this was not your problem, one of these probably is. Each guide covers a different platform or application, with the exact settings path for that one:</p>
+<div class="link-grid"><a href="/fix/microphone-not-working-windows-11">Microphone Not Working on Windows 11</a><a href="/fix/microphone-not-working-windows-10">Microphone Not Working on Windows 10</a><a href="/fix/microphone-not-working-mac">Microphone Not Working on Mac</a><a href="/fix/discord-mic-not-working">Discord Mic Not Working</a><a href="/fix/zoom-microphone-not-working">Zoom Microphone Not Working</a><a href="/fix/microphone-too-quiet">Microphone Too Quiet — How to Make It Louder</a><a href="/fix/microphone-echo">Microphone Echo and Feedback — How to Stop It</a></div>
+</div>
+</section>
+<section class="faq-sec">
+<div class="container">
+<h2>Microphone Not Working in Chrome — FAQ</h2>
+<div class="faq-list"><details class="faq-item"><summary>How do I unblock the microphone in Chrome?</summary><div class="faq-a"><p>Click the padlock at the left of the address bar, open Site settings, and set Microphone to Allow — or use the Reset permission button, then reload the page.</p></div></details><details class="faq-item"><summary>Where is the microphone setting in Chrome?</summary><div class="faq-a"><p>chrome://settings/content/microphone. It holds the global on/off switch, the default input device, and the allowed and blocked site lists.</p></div></details><details class="faq-item"><summary>Why does Chrome use the wrong microphone?</summary><div class="faq-a"><p>Chrome stores its own default input device separately from your operating system. Change it in the dropdown at chrome://settings/content/microphone.</p></div></details><details class="faq-item"><summary>Chrome does not ask for permission at all.</summary><div class="faq-a"><p>Either the site was blocked previously, or the page is not on HTTPS. Check the crossed-out microphone icon in the address bar, and confirm the address begins with https.</p></div></details><details class="faq-item"><summary>Does Incognito mode affect the microphone?</summary><div class="faq-a"><p>Yes, usefully. Incognito starts without stored permissions and with most extensions disabled, so it is a fast way to tell whether your profile is the problem.</p></div></details><details class="faq-item"><summary>Do these steps work in Microsoft Edge?</summary><div class="faq-a"><p>Yes. Edge is Chromium-based; use edge://settings/content/microphone. The same applies to Brave, Opera and Vivaldi with their own scheme names.</p></div></details></div>
+</div>
+</section>
+<section class="cta">
+<div class="container">
+<h2>Test the rest of your setup</h2>
+<p>Webcam, speakers, keyboard, mouse and screen — all free, all running locally in your browser.</p>
+<a class="btn btn-lg" href="/webcam-test">See all device tests</a>
+</div>
+</section>
+</main><footer class="site-foot">
+<div class="container">
+  <div class="foot-grid"><div><h2 class="foot-h">Device Tests</h2><ul><li><a href="/">Microphone Test</a></li><li><a href="/webcam-test">Webcam Test</a></li><li><a href="/speaker-test">Speaker Test</a></li><li><a href="/headphone-test">Headphone Test</a></li><li><a href="/dead-pixel-test">Dead Pixel Test</a></li></ul></div><div><h2 class="foot-h">Input Tests</h2><ul><li><a href="/keyboard-test">Keyboard Test</a></li><li><a href="/mouse-test">Mouse Test</a></li><li><a href="/click-test">Click Speed Test</a></li><li><a href="/double-click-test">Double Click Test</a></li></ul></div><div><h2 class="foot-h">Fix Mic Problems</h2><ul><li><a href="/fix/microphone-not-working-windows-11">Windows 11 Mic Not Working</a></li><li><a href="/fix/microphone-not-working-mac">Mac Mic Not Working</a></li><li><a href="/fix/discord-mic-not-working">Discord Mic Not Working</a></li><li><a href="/fix/zoom-microphone-not-working">Zoom Mic Not Working</a></li><li><a href="/fix">All Fix Guides</a></li></ul></div><div><h2 class="foot-h">Site</h2><ul><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li><li><a href="/privacy">Privacy Policy</a></li><li><a href="/terms">Terms of Use</a></li><li><a href="/disclaimer">Disclaimer</a></li></ul></div></div>
+  <p class="foot-note">Every test on MicTest.live runs entirely inside your browser. Audio and video from your microphone and camera are processed on your device and never uploaded, recorded on a server, or shared with anyone.</p>
+  <p class="copy">© 2026 MicTest.live — free online device tests.</p>
+</div>
+</footer>
+<script src="/app.js" defer></script>
+</body>
+</html>

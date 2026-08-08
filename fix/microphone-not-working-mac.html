@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Microphone Not Working on Mac — How to Fix It</title>
+<meta name="description" content="Fix a microphone that is not working on macOS: privacy permissions, input device and level, Dictation conflicts and resetting the audio daemon.">
+<link rel="canonical" href="https://mictest.live/fix/microphone-not-working-mac">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="MicTest.live">
+<meta property="og:title" content="Microphone Not Working on Mac — How to Fix It">
+<meta property="og:description" content="Fix a microphone that is not working on macOS: privacy permissions, input device and level, Dictation conflicts and resetting the audio daemon.">
+<meta property="og:url" content="https://mictest.live/fix/microphone-not-working-mac">
+<meta property="og:image" content="https://mictest.live/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Microphone Not Working on Mac — How to Fix It">
+<meta name="twitter:description" content="Fix a microphone that is not working on macOS: privacy permissions, input device and level, Dictation conflicts and resetting the audio daemon.">
+<meta name="twitter:image" content="https://mictest.live/assets/og-image.png">
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "Microphone Not Working on Mac", "description": "Fix a microphone that is not working on macOS: privacy permissions, input device and level, Dictation conflicts and resetting the audio daemon.", "url": "https://mictest.live/fix/microphone-not-working-mac", "totalTime": "PT3M", "step": [{"@type": "HowToStep", "position": 1, "name": "Grant microphone permission", "text": "Open System Settings, go to Privacy &amp; Security, then Microphone. You will see a list of applications with a switch beside each. Turn on the one you need. If your browser is not in the list at all, it has never requested access — visit a page that asks for the microphone and the prompt will appear. On older macOS versions this lives in System Preferences, Security &amp; Privacy, Privacy tab."}, {"@type": "HowToStep", "position": 2, "name": "Choose the right input device", "text": "Open System Settings, go to Sound, then the Input tab. Select the microphone you are speaking into and watch the Input level meter as you talk. On a MacBook the built-in option is usually named “MacBook Pro Microphone” or similar; a headset or interface appears by its own name."}, {"@type": "HowToStep", "position": 3, "name": "Raise the input volume", "text": "On the same Input tab, drag the Input volume slider towards the right while speaking. If the meter barely moves at maximum, the source is too quiet — move closer, or check for a gain control on the microphone or interface itself."}, {"@type": "HowToStep", "position": 4, "name": "Untick “Use ambient noise reduction”", "text": "This option appears on the Input tab for the built-in microphone on many Macs. It helps in noisy rooms and can also suppress a quiet voice into silence. Turn it off and test again."}, {"@type": "HowToStep", "position": 5, "name": "Check Dictation and other apps holding the device", "text": "Dictation, Voice Control and screen-recording apps can hold the microphone. Turn Dictation off in System Settings, Keyboard, then quit Zoom, Teams, Discord, OBS and any browser tab that had microphone access. Look in the menu bar for icons indicating an app is still listening."}, {"@type": "HowToStep", "position": 6, "name": "Check the orange recording indicator", "text": "macOS shows a small orange dot in the menu bar whenever the microphone is active. If it is absent while you are testing, no application has actually opened the microphone, which points at permission rather than hardware. If it is present but you get silence, the device is open but delivering nothing."}, {"@type": "HowToStep", "position": 7, "name": "Reset the audio daemon", "text": "Open Terminal from Applications, Utilities, and run: sudo killall coreaudiod — then enter your password. The audio system restarts within a few seconds and the screen may flicker. This clears a surprising number of stuck-device problems without a reboot."}, {"@type": "HowToStep", "position": 8, "name": "Test in another user account", "text": "Create a new user in System Settings, Users &amp; Groups, log into it, and test the microphone there. If it works, the fault is in your account's settings rather than the hardware, and a permissions reset for the affected app will fix it."}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I give an app microphone permission on Mac?", "acceptedAnswer": {"@type": "Answer", "text": "System Settings, Privacy &amp; Security, Microphone, then turn on the switch beside the application. On older versions it is System Preferences, Security &amp; Privacy, Privacy tab, Microphone."}}, {"@type": "Question", "name": "Why is my Mac microphone so quiet?", "acceptedAnswer": {"@type": "Answer", "text": "Raise the Input volume slider in System Settings, Sound, Input, and untick “Use ambient noise reduction”. If it is still quiet, the source level is too low and the microphone or interface needs more gain."}}, {"@type": "Question", "name": "What does the orange dot in the menu bar mean?", "acceptedAnswer": {"@type": "Answer", "text": "An application is using your microphone. Click the Control Centre icon to see which one. It cannot be turned off, which makes it a reliable indicator."}}, {"@type": "Question", "name": "Does killall coreaudiod delete anything?", "acceptedAnswer": {"@type": "Answer", "text": "No. It restarts the audio service. Sound may cut out briefly and then return, and no settings or files are affected."}}, {"@type": "Question", "name": "Why do my AirPods sound bad on calls?", "acceptedAnswer": {"@type": "Answer", "text": "Using them as a microphone forces Bluetooth into a low-quality mode that affects playback as well. Selecting a different input device restores full playback quality."}}, {"@type": "Question", "name": "The mic works on this page but not in Zoom.", "acceptedAnswer": {"@type": "Answer", "text": "Zoom needs its own permission in Privacy &amp; Security, and it also has its own input selector. Grant permission, then choose the device inside Zoom's audio settings."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Microphone Not Working on Mac — How to Fix It", "description": "Fix a microphone that is not working on macOS: privacy permissions, input device and level, Dictation conflicts and resetting the audio daemon.", "inLanguage": "en", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://mictest.live/fix/microphone-not-working-mac"}, "datePublished": "2026-08-08", "dateModified": "2026-08-08", "author": {"@type": "Organization", "name": "MicTest.live", "url": "https://mictest.live"}, "publisher": {"@type": "Organization", "name": "MicTest.live", "url": "https://mictest.live", "logo": {"@type": "ImageObject", "url": "https://mictest.live/favicon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mictest.live/"}, {"@type": "ListItem", "position": 2, "name": "Fix Problems", "item": "https://mictest.live/fix"}, {"@type": "ListItem", "position": 3, "name": "Microphone Not Working on Mac", "item": "https://mictest.live/fix/microphone-not-working-mac"}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="container head-in">
+  <a class="logo" href="/" aria-label="MicTest.live home">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><path d="M12 17v4"/><path d="M8 21h8"/>
+    </svg>
+    <span class="wm">Mic<em>Test</em></span>
+  </a>
+  <button class="burger" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="main-nav" id="mainNav" aria-label="Main"><ul><li><a href="/">Mic Test</a></li><li><a href="/webcam-test">Webcam</a></li><li><a href="/speaker-test">Speakers</a></li><li><a href="/keyboard-test">Keyboard</a></li><li><a href="/mouse-test">Mouse</a></li><li><a href="/fix" class="on">Fix Problems</a></li><li><a href="/guides">Guides</a></li></ul></nav>
+</div>
+</header>
+<main id="main"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> <i>/</i> <a href="/fix">Fix Problems</a> <i>/</i> <span>Microphone Not Working on Mac</span></nav></div>
+<div class="page-head">
+<div class="container">
+<h1>Microphone Not Working on Mac</h1>
+<p class="lede">macOS handles microphone permission per application, which makes the fix precise once you know where to look. Here is the order that resolves it fastest.</p>
+</div>
+</div>
+<div class="container tool-wrap">
+<div class="stage" id="micTool">
+  <div class="status" id="micStatus"><span class="dot"></span><span>Loading…</span></div>
+  <div class="field-row">
+    <div class="field"><label for="micSelect">Input device</label>
+      <select id="micSelect" disabled><option>Detecting microphones…</option></select></div>
+  </div>
+  <div class="btn-row">
+    <button class="btn btn-lg" id="micStart" type="button">Test My Microphone</button>
+    <button class="btn btn-alt" id="micStop" type="button" disabled>Stop</button>
+    <button class="btn btn-ghost" id="micRec" type="button" disabled>Record 5 seconds</button>
+  </div>
+  <div class="meter-wrap">
+    <div class="meter"><div class="fill" id="micFill"></div></div>
+    <div class="meter-labels"><span>−60 dB</span><span>−40</span><span>−20</span><span>−6</span><span>0 dB</span></div>
+    <div class="peak-row">
+      <span>Current: <b id="micCur">—</b></span><span>Peak: <b id="micPeak">—</b></span><span>Average: <b id="micAvg">—</b></span>
+    </div>
+  </div>
+  <div class="viz-grid">
+    <div><p class="viz-label">Waveform</p><canvas class="viz short" id="micWave"></canvas></div>
+    <div><p class="viz-label">Spectrum</p><canvas class="viz short" id="micSpec"></canvas></div>
+  </div>
+  <div class="tog-row">
+    <label class="tog"><input type="checkbox" id="optEC" checked> Echo cancellation</label>
+    <label class="tog"><input type="checkbox" id="optNS" checked> Noise suppression</label>
+    <label class="tog"><input type="checkbox" id="optAGC" checked> Auto gain control</label>
+  </div>
+  <div class="verdict" id="micVerdict"></div>
+  <div class="rec-list" id="micRecList"></div>
+  <div id="micInfo" style="margin-top:16px"></div>
+</div>
+</div>
+<section>
+<div class="container prose">
+<h2>Start here</h2>
+<p>macOS is stricter about microphone access than Windows, and that strictness is usually the answer. Every application must be granted permission individually, and an app that was working can lose that permission after an update or after being moved.</p><p>Start with the test at the top of this page. If the meter moves here, your hardware and drivers are fine and the problem lives in one specific app's permissions. If nothing moves here either, work through the whole list.</p>
+<h2>Fixes, in the order to try them</h2><ol class="steps"><li><h3>Grant microphone permission</h3><p>Open System Settings, go to Privacy &amp; Security, then Microphone. You will see a list of applications with a switch beside each. Turn on the one you need. If your browser is not in the list at all, it has never requested access — visit a page that asks for the microphone and the prompt will appear. On older macOS versions this lives in System Preferences, Security &amp; Privacy, Privacy tab.</p></li><li><h3>Choose the right input device</h3><p>Open System Settings, go to Sound, then the Input tab. Select the microphone you are speaking into and watch the Input level meter as you talk. On a MacBook the built-in option is usually named “MacBook Pro Microphone” or similar; a headset or interface appears by its own name.</p></li><li><h3>Raise the input volume</h3><p>On the same Input tab, drag the Input volume slider towards the right while speaking. If the meter barely moves at maximum, the source is too quiet — move closer, or check for a gain control on the microphone or interface itself.</p></li><li><h3>Untick “Use ambient noise reduction”</h3><p>This option appears on the Input tab for the built-in microphone on many Macs. It helps in noisy rooms and can also suppress a quiet voice into silence. Turn it off and test again.</p></li><li><h3>Check Dictation and other apps holding the device</h3><p>Dictation, Voice Control and screen-recording apps can hold the microphone. Turn Dictation off in System Settings, Keyboard, then quit Zoom, Teams, Discord, OBS and any browser tab that had microphone access. Look in the menu bar for icons indicating an app is still listening.</p></li><li><h3>Check the orange recording indicator</h3><p>macOS shows a small orange dot in the menu bar whenever the microphone is active. If it is absent while you are testing, no application has actually opened the microphone, which points at permission rather than hardware. If it is present but you get silence, the device is open but delivering nothing.</p></li><li><h3>Reset the audio daemon</h3><p>Open Terminal from Applications, Utilities, and run: sudo killall coreaudiod — then enter your password. The audio system restarts within a few seconds and the screen may flicker. This clears a surprising number of stuck-device problems without a reboot.</p></li><li><h3>Test in another user account</h3><p>Create a new user in System Settings, Users &amp; Groups, log into it, and test the microphone there. If it works, the fault is in your account's settings rather than the hardware, and a permissions reset for the affected app will fix it.</p></li></ol>
+<h2>Why the orange dot is the fastest diagnostic on a Mac</h2><p>Since macOS Monterey a small orange dot appears in the menu bar whenever any application is using the microphone, and it cannot be disabled by software. That makes it a trustworthy signal.</p><p>If you press start on a microphone test and no dot appears, the microphone was never opened — the problem is permission or device selection, not the hardware. If the dot appears and you still get silence, the device opened successfully and something downstream is wrong: the wrong input, a muted level, or noise reduction removing the signal. Clicking the Control Centre icon shows exactly which application is using it.</p><h2>AirPods and Bluetooth headsets on macOS</h2><p>When AirPods or any Bluetooth headset is used as a microphone, macOS switches the connection to a low-bandwidth mode and audio quality drops noticeably in both directions. This is a limitation of the Bluetooth profile rather than a fault, and it affects every wireless headset.</p><p>If you want good sound in both directions, use the AirPods for listening and a different microphone for speaking, selected separately on the Input and Output tabs. If AirPods do not appear as an input at all, forget the device in Bluetooth settings and pair again.</p><h2>External interfaces and aggregate devices</h2><p>Audio interfaces sometimes present several inputs under one device name, and macOS captures only the first channel. If your microphone is plugged into input 2 of a two-channel interface, the system may be listening to the silent input 1.</p><p>Open Audio MIDI Setup from Applications, Utilities, select the interface, and check the channel configuration. This is also where an Aggregate Device can be built if you need to combine inputs, though an aggregate that includes a disconnected device will fail silently — a common cause of a setup that used to work and suddenly does not.</p>
+<h2>Other fix guides</h2>
+<p>If this was not your problem, one of these probably is. Each guide covers a different platform or application, with the exact settings path for that one:</p>
+<div class="link-grid"><a href="/fix/microphone-not-working-windows-11">Microphone Not Working on Windows 11</a><a href="/fix/microphone-not-working-windows-10">Microphone Not Working on Windows 10</a><a href="/fix/microphone-not-working-chrome">Microphone Not Working in Chrome</a><a href="/fix/discord-mic-not-working">Discord Mic Not Working</a><a href="/fix/zoom-microphone-not-working">Zoom Microphone Not Working</a><a href="/fix/microphone-too-quiet">Microphone Too Quiet — How to Make It Louder</a><a href="/fix/microphone-echo">Microphone Echo and Feedback — How to Stop It</a></div>
+</div>
+</section>
+<section class="faq-sec">
+<div class="container">
+<h2>Microphone Not Working on Mac — FAQ</h2>
+<div class="faq-list"><details class="faq-item"><summary>How do I give an app microphone permission on Mac?</summary><div class="faq-a"><p>System Settings, Privacy &amp; Security, Microphone, then turn on the switch beside the application. On older versions it is System Preferences, Security &amp; Privacy, Privacy tab, Microphone.</p></div></details><details class="faq-item"><summary>Why is my Mac microphone so quiet?</summary><div class="faq-a"><p>Raise the Input volume slider in System Settings, Sound, Input, and untick “Use ambient noise reduction”. If it is still quiet, the source level is too low and the microphone or interface needs more gain.</p></div></details><details class="faq-item"><summary>What does the orange dot in the menu bar mean?</summary><div class="faq-a"><p>An application is using your microphone. Click the Control Centre icon to see which one. It cannot be turned off, which makes it a reliable indicator.</p></div></details><details class="faq-item"><summary>Does killall coreaudiod delete anything?</summary><div class="faq-a"><p>No. It restarts the audio service. Sound may cut out briefly and then return, and no settings or files are affected.</p></div></details><details class="faq-item"><summary>Why do my AirPods sound bad on calls?</summary><div class="faq-a"><p>Using them as a microphone forces Bluetooth into a low-quality mode that affects playback as well. Selecting a different input device restores full playback quality.</p></div></details><details class="faq-item"><summary>The mic works on this page but not in Zoom.</summary><div class="faq-a"><p>Zoom needs its own permission in Privacy &amp; Security, and it also has its own input selector. Grant permission, then choose the device inside Zoom's audio settings.</p></div></details></div>
+</div>
+</section>
+<section class="cta">
+<div class="container">
+<h2>Test the rest of your setup</h2>
+<p>Webcam, speakers, keyboard, mouse and screen — all free, all running locally in your browser.</p>
+<a class="btn btn-lg" href="/webcam-test">See all device tests</a>
+</div>
+</section>
+</main><footer class="site-foot">
+<div class="container">
+  <div class="foot-grid"><div><h2 class="foot-h">Device Tests</h2><ul><li><a href="/">Microphone Test</a></li><li><a href="/webcam-test">Webcam Test</a></li><li><a href="/speaker-test">Speaker Test</a></li><li><a href="/headphone-test">Headphone Test</a></li><li><a href="/dead-pixel-test">Dead Pixel Test</a></li></ul></div><div><h2 class="foot-h">Input Tests</h2><ul><li><a href="/keyboard-test">Keyboard Test</a></li><li><a href="/mouse-test">Mouse Test</a></li><li><a href="/click-test">Click Speed Test</a></li><li><a href="/double-click-test">Double Click Test</a></li></ul></div><div><h2 class="foot-h">Fix Mic Problems</h2><ul><li><a href="/fix/microphone-not-working-windows-11">Windows 11 Mic Not Working</a></li><li><a href="/fix/microphone-not-working-mac">Mac Mic Not Working</a></li><li><a href="/fix/discord-mic-not-working">Discord Mic Not Working</a></li><li><a href="/fix/zoom-microphone-not-working">Zoom Mic Not Working</a></li><li><a href="/fix">All Fix Guides</a></li></ul></div><div><h2 class="foot-h">Site</h2><ul><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li><li><a href="/privacy">Privacy Policy</a></li><li><a href="/terms">Terms of Use</a></li><li><a href="/disclaimer">Disclaimer</a></li></ul></div></div>
+  <p class="foot-note">Every test on MicTest.live runs entirely inside your browser. Audio and video from your microphone and camera are processed on your device and never uploaded, recorded on a server, or shared with anyone.</p>
+  <p class="copy">© 2026 MicTest.live — free online device tests.</p>
+</div>
+</footer>
+<script src="/app.js" defer></script>
+</body>
+</html>

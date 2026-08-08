@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Discord Mic Not Working — Fix It in 8 Steps</title>
+<meta name="description" content="Fix a Discord microphone nobody can hear: input device, input mode, sensitivity, exclusive mode and voice settings reset — with a live mic test first.">
+<link rel="canonical" href="https://mictest.live/fix/discord-mic-not-working">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="MicTest.live">
+<meta property="og:title" content="Discord Mic Not Working — Fix It in 8 Steps">
+<meta property="og:description" content="Fix a Discord microphone nobody can hear: input device, input mode, sensitivity, exclusive mode and voice settings reset — with a live mic test first.">
+<meta property="og:url" content="https://mictest.live/fix/discord-mic-not-working">
+<meta property="og:image" content="https://mictest.live/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Discord Mic Not Working — Fix It in 8 Steps">
+<meta name="twitter:description" content="Fix a Discord microphone nobody can hear: input device, input mode, sensitivity, exclusive mode and voice settings reset — with a live mic test first.">
+<meta name="twitter:image" content="https://mictest.live/assets/og-image.png">
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "Discord Mic Not Working", "description": "Fix a Discord microphone nobody can hear: input device, input mode, sensitivity, exclusive mode and voice settings reset — with a live mic test first.", "url": "https://mictest.live/fix/discord-mic-not-working", "totalTime": "PT3M", "step": [{"@type": "HowToStep", "position": 1, "name": "Set the input device in Discord", "text": "Open User Settings with the gear icon beside your name, then Voice &amp; Video. Under Input Device, select the microphone you actually use rather than Default. Default follows the system device and silently changes when hardware is plugged or unplugged, which is why calls stop working after you move a headset."}, {"@type": "HowToStep", "position": 2, "name": "Use the Mic Test bar inside Discord", "text": "On the same Voice &amp; Video page, press “Let's Check” and speak. The bar should move. This confirms Discord itself can hear the device and separates a Discord problem from an application-permission problem."}, {"@type": "HowToStep", "position": 3, "name": "Turn off automatic input sensitivity", "text": "Below the volume sliders, switch off “Automatically determine input sensitivity” and drag the manual slider left until the bar lights up when you speak normally. Automatic sensitivity misjudges quiet microphones constantly and is the single most frequent reason Discord transmits nothing."}, {"@type": "HowToStep", "position": 4, "name": "Check your input mode", "text": "Still in Voice &amp; Video, look at Input Mode. If Push to Talk is selected, you must hold the assigned key to transmit — and if the shortcut was set to a key you no longer press, you will appear muted permanently. Switch to Voice Activity to rule it out."}, {"@type": "HowToStep", "position": 5, "name": "Reset voice settings", "text": "Scroll to the bottom of Voice &amp; Video and press “Reset Voice Settings”. This clears device selections, sensitivity, codec and processing options in one step and fixes a large share of cases where something was changed and forgotten."}, {"@type": "HowToStep", "position": 6, "name": "Disable exclusive mode on Windows", "text": "Open the Sound control panel, Recording tab, double-click your microphone, open Advanced, and untick “Allow applications to take exclusive control of this device”. When another application holds the device exclusively, Discord receives silence with no error."}, {"@type": "HowToStep", "position": 7, "name": "Run Discord as administrator once", "text": "Close Discord completely, including the system tray icon, then right-click the shortcut and choose “Run as administrator”. This resolves cases where Discord cannot access the input device because of permission scoping, particularly on managed or work computers."}, {"@type": "HowToStep", "position": 8, "name": "Check Windows privacy and app permission", "text": "Open Settings, Privacy &amp; security, Microphone, and make sure both microphone access and “Let desktop apps access your microphone” are on. If you use Discord in a browser rather than the app, grant the permission to the browser instead."}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why can nobody hear me on Discord?", "acceptedAnswer": {"@type": "Answer", "text": "Most often because automatic input sensitivity has set the threshold above your voice, or because the input device is set to Default and has silently changed. Fix both in User Settings, Voice &amp; Video."}}, {"@type": "Question", "name": "How do I test my mic in Discord?", "acceptedAnswer": {"@type": "Answer", "text": "User Settings, Voice &amp; Video, then press “Let's Check” and speak. The bar should move as you talk."}}, {"@type": "Question", "name": "Discord works in the browser but not the app.", "acceptedAnswer": {"@type": "Answer", "text": "The desktop app needs microphone access through Windows privacy settings, while the browser needs it through the browser's own permission. Grant it in the right place for the version you use."}}, {"@type": "Question", "name": "What does Reset Voice Settings do?", "acceptedAnswer": {"@type": "Answer", "text": "It restores every audio option in Voice &amp; Video to its default, including device selection and sensitivity. It does not affect your account, servers or messages."}}, {"@type": "Question", "name": "Should I turn Krisp off?", "acceptedAnswer": {"@type": "Answer", "text": "Try it if people say you cut in and out. Krisp is aggressive and can classify a quiet voice as background noise."}}, {"@type": "Question", "name": "Why does my mic work in Discord but sound terrible?", "acceptedAnswer": {"@type": "Answer", "text": "Usually the automatic gain control fighting a low input level, or a Bluetooth headset dropping to its low-quality call profile. Set the gain manually and use a wired microphone for anything important."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Discord Mic Not Working — Fix It in 8 Steps", "description": "Fix a Discord microphone nobody can hear: input device, input mode, sensitivity, exclusive mode and voice settings reset — with a live mic test first.", "inLanguage": "en", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://mictest.live/fix/discord-mic-not-working"}, "datePublished": "2026-08-08", "dateModified": "2026-08-08", "author": {"@type": "Organization", "name": "MicTest.live", "url": "https://mictest.live"}, "publisher": {"@type": "Organization", "name": "MicTest.live", "url": "https://mictest.live", "logo": {"@type": "ImageObject", "url": "https://mictest.live/favicon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mictest.live/"}, {"@type": "ListItem", "position": 2, "name": "Fix Problems", "item": "https://mictest.live/fix"}, {"@type": "ListItem", "position": 3, "name": "Discord Mic Not Working", "item": "https://mictest.live/fix/discord-mic-not-working"}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="container head-in">
+  <a class="logo" href="/" aria-label="MicTest.live home">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><path d="M12 17v4"/><path d="M8 21h8"/>
+    </svg>
+    <span class="wm">Mic<em>Test</em></span>
+  </a>
+  <button class="burger" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="main-nav" id="mainNav" aria-label="Main"><ul><li><a href="/">Mic Test</a></li><li><a href="/webcam-test">Webcam</a></li><li><a href="/speaker-test">Speakers</a></li><li><a href="/keyboard-test">Keyboard</a></li><li><a href="/mouse-test">Mouse</a></li><li><a href="/fix" class="on">Fix Problems</a></li><li><a href="/guides">Guides</a></li></ul></nav>
+</div>
+</header>
+<main id="main"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> <i>/</i> <a href="/fix">Fix Problems</a> <i>/</i> <span>Discord Mic Not Working</span></nav></div>
+<div class="page-head">
+<div class="container">
+<h1>Discord Mic Not Working</h1>
+<p class="lede">Start by proving the microphone itself works with the test above. If the meter moves here and Discord still hears nothing, the fix is inside Discord, and these are the eight settings that cause it.</p>
+</div>
+</div>
+<div class="container tool-wrap">
+<div class="stage" id="micTool">
+  <div class="status" id="micStatus"><span class="dot"></span><span>Loading…</span></div>
+  <div class="field-row">
+    <div class="field"><label for="micSelect">Input device</label>
+      <select id="micSelect" disabled><option>Detecting microphones…</option></select></div>
+  </div>
+  <div class="btn-row">
+    <button class="btn btn-lg" id="micStart" type="button">Test My Microphone</button>
+    <button class="btn btn-alt" id="micStop" type="button" disabled>Stop</button>
+    <button class="btn btn-ghost" id="micRec" type="button" disabled>Record 5 seconds</button>
+  </div>
+  <div class="meter-wrap">
+    <div class="meter"><div class="fill" id="micFill"></div></div>
+    <div class="meter-labels"><span>−60 dB</span><span>−40</span><span>−20</span><span>−6</span><span>0 dB</span></div>
+    <div class="peak-row">
+      <span>Current: <b id="micCur">—</b></span><span>Peak: <b id="micPeak">—</b></span><span>Average: <b id="micAvg">—</b></span>
+    </div>
+  </div>
+  <div class="viz-grid">
+    <div><p class="viz-label">Waveform</p><canvas class="viz short" id="micWave"></canvas></div>
+    <div><p class="viz-label">Spectrum</p><canvas class="viz short" id="micSpec"></canvas></div>
+  </div>
+  <div class="tog-row">
+    <label class="tog"><input type="checkbox" id="optEC" checked> Echo cancellation</label>
+    <label class="tog"><input type="checkbox" id="optNS" checked> Noise suppression</label>
+    <label class="tog"><input type="checkbox" id="optAGC" checked> Auto gain control</label>
+  </div>
+  <div class="verdict" id="micVerdict"></div>
+  <div class="rec-list" id="micRecList"></div>
+  <div id="micInfo" style="margin-top:16px"></div>
+</div>
+</div>
+<section>
+<div class="container prose">
+<h2>Start here</h2>
+<p>Discord has more audio settings than almost any other chat application, and several of them can silence a working microphone on their own. Automatic input sensitivity is the most common culprit by a wide margin, followed by a stale input device selection after a headset was unplugged.</p><p>Test your microphone at the top of this page first. That single step splits the problem in half: if the meter moves, the hardware, drivers and OS permissions are all fine and you only need to fix Discord. If it does not, start with the operating system guides linked at the end.</p>
+<h2>Fixes, in the order to try them</h2><ol class="steps"><li><h3>Set the input device in Discord</h3><p>Open User Settings with the gear icon beside your name, then Voice &amp; Video. Under Input Device, select the microphone you actually use rather than Default. Default follows the system device and silently changes when hardware is plugged or unplugged, which is why calls stop working after you move a headset.</p></li><li><h3>Use the Mic Test bar inside Discord</h3><p>On the same Voice &amp; Video page, press “Let's Check” and speak. The bar should move. This confirms Discord itself can hear the device and separates a Discord problem from an application-permission problem.</p></li><li><h3>Turn off automatic input sensitivity</h3><p>Below the volume sliders, switch off “Automatically determine input sensitivity” and drag the manual slider left until the bar lights up when you speak normally. Automatic sensitivity misjudges quiet microphones constantly and is the single most frequent reason Discord transmits nothing.</p></li><li><h3>Check your input mode</h3><p>Still in Voice &amp; Video, look at Input Mode. If Push to Talk is selected, you must hold the assigned key to transmit — and if the shortcut was set to a key you no longer press, you will appear muted permanently. Switch to Voice Activity to rule it out.</p></li><li><h3>Reset voice settings</h3><p>Scroll to the bottom of Voice &amp; Video and press “Reset Voice Settings”. This clears device selections, sensitivity, codec and processing options in one step and fixes a large share of cases where something was changed and forgotten.</p></li><li><h3>Disable exclusive mode on Windows</h3><p>Open the Sound control panel, Recording tab, double-click your microphone, open Advanced, and untick “Allow applications to take exclusive control of this device”. When another application holds the device exclusively, Discord receives silence with no error.</p></li><li><h3>Run Discord as administrator once</h3><p>Close Discord completely, including the system tray icon, then right-click the shortcut and choose “Run as administrator”. This resolves cases where Discord cannot access the input device because of permission scoping, particularly on managed or work computers.</p></li><li><h3>Check Windows privacy and app permission</h3><p>Open Settings, Privacy &amp; security, Microphone, and make sure both microphone access and “Let desktop apps access your microphone” are on. If you use Discord in a browser rather than the app, grant the permission to the browser instead.</p></li></ol>
+<h2>Why automatic sensitivity fails so often</h2><p>Discord's automatic input sensitivity tries to learn the difference between your voice and the background, then transmits only above that threshold. It works well with a loud microphone in a quiet room and poorly with everything else.</p><p>With a quiet laptop microphone, or when you speak softly, the automatic threshold ends up above your voice and Discord transmits nothing at all — while its own meter may still show movement. Turning the feature off and setting the threshold by hand takes ten seconds and makes the behaviour predictable: speak normally, and set the slider just below where the bar reaches.</p><h2>Krisp, noise suppression and processing</h2><p>Discord includes several processing options: Echo Cancellation, Noise Reduction, Automatic Gain Control, and the Krisp noise suppression system. Each helps in the right situation and each can hurt in the wrong one.</p><p>Krisp is aggressive by design. On a quiet voice it can classify speech as noise and remove it, which sounds to the listener like you are cutting in and out. If people report that you keep dropping mid-sentence, turn Krisp off first, then Noise Reduction, and test after each.</p><h2>Server-side and account-level causes</h2><p>Not everything is a settings problem. Check that you are not server-muted, which shows as a small crossed-out microphone next to your name in the member list and can only be lifted by a moderator. Check your own mute button at the bottom-left, which is easy to hit by accident. And check that you have permission to speak in that particular channel, since roles can restrict it.</p><p>If your voice works in one server and not another, it is a permission or moderation issue, not an audio one — no amount of driver work will change it.</p>
+<h2>Other fix guides</h2>
+<p>If this was not your problem, one of these probably is. Each guide covers a different platform or application, with the exact settings path for that one:</p>
+<div class="link-grid"><a href="/fix/microphone-not-working-windows-11">Microphone Not Working on Windows 11</a><a href="/fix/microphone-not-working-windows-10">Microphone Not Working on Windows 10</a><a href="/fix/microphone-not-working-mac">Microphone Not Working on Mac</a><a href="/fix/microphone-not-working-chrome">Microphone Not Working in Chrome</a><a href="/fix/zoom-microphone-not-working">Zoom Microphone Not Working</a><a href="/fix/microphone-too-quiet">Microphone Too Quiet — How to Make It Louder</a><a href="/fix/microphone-echo">Microphone Echo and Feedback — How to Stop It</a></div>
+</div>
+</section>
+<section class="faq-sec">
+<div class="container">
+<h2>Discord Mic Not Working — FAQ</h2>
+<div class="faq-list"><details class="faq-item"><summary>Why can nobody hear me on Discord?</summary><div class="faq-a"><p>Most often because automatic input sensitivity has set the threshold above your voice, or because the input device is set to Default and has silently changed. Fix both in User Settings, Voice &amp; Video.</p></div></details><details class="faq-item"><summary>How do I test my mic in Discord?</summary><div class="faq-a"><p>User Settings, Voice &amp; Video, then press “Let's Check” and speak. The bar should move as you talk.</p></div></details><details class="faq-item"><summary>Discord works in the browser but not the app.</summary><div class="faq-a"><p>The desktop app needs microphone access through Windows privacy settings, while the browser needs it through the browser's own permission. Grant it in the right place for the version you use.</p></div></details><details class="faq-item"><summary>What does Reset Voice Settings do?</summary><div class="faq-a"><p>It restores every audio option in Voice &amp; Video to its default, including device selection and sensitivity. It does not affect your account, servers or messages.</p></div></details><details class="faq-item"><summary>Should I turn Krisp off?</summary><div class="faq-a"><p>Try it if people say you cut in and out. Krisp is aggressive and can classify a quiet voice as background noise.</p></div></details><details class="faq-item"><summary>Why does my mic work in Discord but sound terrible?</summary><div class="faq-a"><p>Usually the automatic gain control fighting a low input level, or a Bluetooth headset dropping to its low-quality call profile. Set the gain manually and use a wired microphone for anything important.</p></div></details></div>
+</div>
+</section>
+<section class="cta">
+<div class="container">
+<h2>Test the rest of your setup</h2>
+<p>Webcam, speakers, keyboard, mouse and screen — all free, all running locally in your browser.</p>
+<a class="btn btn-lg" href="/webcam-test">See all device tests</a>
+</div>
+</section>
+</main><footer class="site-foot">
+<div class="container">
+  <div class="foot-grid"><div><h2 class="foot-h">Device Tests</h2><ul><li><a href="/">Microphone Test</a></li><li><a href="/webcam-test">Webcam Test</a></li><li><a href="/speaker-test">Speaker Test</a></li><li><a href="/headphone-test">Headphone Test</a></li><li><a href="/dead-pixel-test">Dead Pixel Test</a></li></ul></div><div><h2 class="foot-h">Input Tests</h2><ul><li><a href="/keyboard-test">Keyboard Test</a></li><li><a href="/mouse-test">Mouse Test</a></li><li><a href="/click-test">Click Speed Test</a></li><li><a href="/double-click-test">Double Click Test</a></li></ul></div><div><h2 class="foot-h">Fix Mic Problems</h2><ul><li><a href="/fix/microphone-not-working-windows-11">Windows 11 Mic Not Working</a></li><li><a href="/fix/microphone-not-working-mac">Mac Mic Not Working</a></li><li><a href="/fix/discord-mic-not-working">Discord Mic Not Working</a></li><li><a href="/fix/zoom-microphone-not-working">Zoom Mic Not Working</a></li><li><a href="/fix">All Fix Guides</a></li></ul></div><div><h2 class="foot-h">Site</h2><ul><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li><li><a href="/privacy">Privacy Policy</a></li><li><a href="/terms">Terms of Use</a></li><li><a href="/disclaimer">Disclaimer</a></li></ul></div></div>
+  <p class="foot-note">Every test on MicTest.live runs entirely inside your browser. Audio and video from your microphone and camera are processed on your device and never uploaded, recorded on a server, or shared with anyone.</p>
+  <p class="copy">© 2026 MicTest.live — free online device tests.</p>
+</div>
+</footer>
+<script src="/app.js" defer></script>
+</body>
+</html>
