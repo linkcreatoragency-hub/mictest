@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Headphone Test — Left Right and Frequency Test Online</title>
+<meta name="description" content="Free online headphone test. Confirm both earcups work, check that left and right are not swapped, and sweep 20 Hz to 20 kHz to find dropouts or a failing driver.">
+<link rel="canonical" href="https://mictest.live/headphone-test">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="MicTest.live">
+<meta property="og:title" content="Headphone Test — Left Right and Frequency Test Online">
+<meta property="og:description" content="Free online headphone test. Confirm both earcups work, check that left and right are not swapped, and sweep 20 Hz to 20 kHz to find dropouts or a failing driver.">
+<meta property="og:url" content="https://mictest.live/headphone-test">
+<meta property="og:image" content="https://mictest.live/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Headphone Test — Left Right and Frequency Test Online">
+<meta name="twitter:description" content="Free online headphone test. Confirm both earcups work, check that left and right are not swapped, and sweep 20 Hz to 20 kHz to find dropouts or a failing driver.">
+<meta name="twitter:image" content="https://mictest.live/assets/og-image.png">
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Online Headphone Test", "url": "https://mictest.live/headphone-test", "description": "Free browser headphone test with left and right channel tones, stereo balance check and a full frequency sweep.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "All", "browserRequirements": "Requires a modern browser with JavaScript enabled", "inLanguage": "en", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "featureList": "Left and right earcup test, channel swap detection, balance check, frequency sweep, single tones"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I check if my headphones are wired the right way round?", "acceptedAnswer": {"@type": "Answer", "text": "Play the left-only tone with the headphones on your head as normal. Sound should appear in your left ear. If it appears in the right, the headphones or the cable are wired backwards, or your system's channel setting is reversed."}}, {"@type": "Question", "name": "One earcup is quieter than the other — what causes that?", "acceptedAnswer": {"@type": "Answer", "text": "Most often a partly inserted 3.5 mm plug, dirt in the jack, or a damaged cable near the connector. Wiggle the plug gently while a tone plays; if the level changes, the connection is the problem, not the driver."}}, {"@type": "Question", "name": "What frequency range should headphones cover?", "acceptedAnswer": {"@type": "Answer", "text": "Decent headphones reproduce roughly 20 Hz to 20 kHz, which is wider than most speakers because the driver sits right at your ear. You are more likely to run out of hearing than to run out of headphone."}}, {"@type": "Question", "name": "Do Bluetooth headphones behave differently?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Bluetooth adds latency, and when the microphone is activated the connection drops to a low-quality mono profile that sounds noticeably worse. That is a limitation of Bluetooth itself and affects every wireless headset."}}, {"@type": "Question", "name": "Can loud test tones damage my hearing?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, if you push the volume. Sustained pure tones feel less loud than music but carry the same risk. Start at a low level and stop immediately if anything is uncomfortable."}}, {"@type": "Question", "name": "Why do I hear a hiss when nothing is playing?", "acceptedAnswer": {"@type": "Answer", "text": "A constant hiss with no signal usually comes from the amplifier's noise floor, and it is more audible with sensitive in-ear monitors. On a laptop, a hiss that changes when you move the mouse points to electrical interference rather than the headphones."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mictest.live/"}, {"@type": "ListItem", "position": 2, "name": "Headphone Test", "item": "https://mictest.live/headphone-test"}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="container head-in">
+  <a class="logo" href="/" aria-label="MicTest.live home">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><path d="M12 17v4"/><path d="M8 21h8"/>
+    </svg>
+    <span class="wm">Mic<em>Test</em></span>
+  </a>
+  <button class="burger" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="main-nav" id="mainNav" aria-label="Main"><ul><li><a href="/">Mic Test</a></li><li><a href="/webcam-test">Webcam</a></li><li><a href="/speaker-test" class="on">Speakers</a></li><li><a href="/keyboard-test">Keyboard</a></li><li><a href="/mouse-test">Mouse</a></li><li><a href="/fix">Fix Problems</a></li><li><a href="/guides">Guides</a></li></ul></nav>
+</div>
+</header>
+<main id="main"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> <i>/</i> <span>Headphone Test</span></nav></div>
+<div class="page-head">
+<div class="container">
+<h1>Headphone Test — <em>Left, Right</em> and Frequency Check</h1>
+<p class="lede">Test your headphones in your browser. Confirm both earcups work, verify left and right are not swapped, and sweep the full frequency range to check for dropouts, rattles or a dead driver.</p>
+</div>
+</div>
+
+<div class="container tool-wrap">
+<div class="stage" id="spkTool">
+  <div class="status" id="spkStatus"><span class="dot"></span><span>Loading…</span></div>
+
+  <div class="chan-row">
+    <div class="chan" data-chan="left"><p class="chan-h">◀ Left channel</p><p>440 Hz tone — left only</p></div>
+    <div class="chan" data-chan="right"><p class="chan-h">Right channel ▶</p><p>440 Hz tone — right only</p></div>
+  </div>
+  <div class="btn-row">
+    <button class="btn" data-chan="both" type="button">Play both channels</button>
+    <button class="btn btn-ghost" id="spkSweep" type="button">20 Hz → 20 kHz sweep</button>
+    <button class="btn btn-alt" id="spkStop" type="button">Stop sound</button>
+  </div>
+
+  <div class="field-row" style="margin-top:18px">
+    <div class="field">
+      <label for="spkVol">Test volume — <span id="spkVolVal">25%</span></label>
+      <input type="range" id="spkVol" min="1" max="100" value="25">
+    </div>
+    <div class="field" style="max-width:200px">
+      <label>Playing now</label>
+      <div style="font-size:1.4rem;font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums" id="spkFreqNow">—</div>
+    </div>
+  </div>
+
+  <p class="viz-label" style="margin-top:18px">Single frequency tones</p>
+  <div class="freq-grid">
+    <button data-freq="30" type="button">30 Hz</button>
+    <button data-freq="60" type="button">60 Hz</button>
+    <button data-freq="120" type="button">120 Hz</button>
+    <button data-freq="250" type="button">250 Hz</button>
+    <button data-freq="440" type="button">440 Hz</button>
+    <button data-freq="1000" type="button">1 kHz</button>
+    <button data-freq="4000" type="button">4 kHz</button>
+    <button data-freq="8000" type="button">8 kHz</button>
+    <button data-freq="12000" type="button">12 kHz</button>
+    <button data-freq="16000" type="button">16 kHz</button>
+    <button data-freq="18000" type="button">18 kHz</button>
+    <button data-freq="20000" type="button">20 kHz</button>
+  </div>
+  <p class="center muted" style="margin-top:10px">Start quiet. Pure tones sound louder and are harder on drivers than music at the same level.</p>
+</div>
+</div>
+<section>
+<div class="container prose">
+<h2>The three checks that matter for headphones</h2>
+<p><strong>Both drivers alive.</strong> Play the left tone, then the right. This is obvious with headphones on your head in a way it never quite is with speakers in a room, because there is no crosstalk between your ears. If one side is silent, you have found a real fault in seconds.</p>
+<p><strong>Correct orientation.</strong> Headphones are marked L and R for a reason, and getting them backwards ruins spatial audio in games and films while sounding almost normal with music. Put them on the way you always do, play the left-only tone, and confirm it arrives in your left ear.</p>
+<p><strong>Matched level.</strong> With the both-channels tone playing, the sound should sit dead centre inside your head. If it pulls to one side, either the balance setting is off or one driver has lost sensitivity — a common early symptom of a headphone that is starting to fail.</p>
+
+<h2>Reading the frequency sweep</h2>
+<p>Run the 20 Hz to 20 kHz sweep with the headphones on and pay attention to three moments. The point where you first feel or hear the bass tells you the practical low limit — good over-ear headphones reach genuinely low, in-ears vary enormously, and cheap earbuds often produce nothing meaningful below 80 Hz.</p>
+<p>The middle of the sweep should be smooth and continuous. Any point where the tone suddenly drops out and comes back is a fault worth investigating, and any point where it turns buzzy suggests a damaged or dirty driver.</p>
+<p>The point where the tone disappears at the top is more a test of your ears than of your headphones. Hearing loss at high frequencies begins in the twenties and progresses steadily; someone at 20 might hear to 18 kHz while someone at 50 may stop near 13 kHz. Both are normal. If one ear stops noticeably earlier than the other, that asymmetry is worth mentioning to a doctor.</p>
+
+<h2>Wired versus wireless</h2>
+<table>
+<thead><tr><th></th><th>Wired 3.5 mm</th><th>USB</th><th>Bluetooth</th></tr></thead>
+<tbody>
+<tr><td>Latency</td><td>None audible</td><td>Very low</td><td>100–300 ms typical</td></tr>
+<tr><td>Mic quality</td><td>Depends on the input</td><td>Good, consistent</td><td>Drops to mono, low bandwidth during calls</td></tr>
+<tr><td>Common failure</td><td>Cable near the plug</td><td>Driver or port</td><td>Pairing and profile switching</td></tr>
+<tr><td>Good for</td><td>Recording, gaming, monitoring</td><td>Desk use, headsets</td><td>Convenience, mobile</td></tr>
+</tbody>
+</table>
+<p>The single most common headphone fault of all is a break in the cable just where it enters the plug or the earcup, caused by repeated bending. It shows up as one channel cutting in and out as you move. Because it is a mechanical failure rather than an electronic one, no software setting will fix it — but on headphones with a detachable cable, a replacement cable costs very little and solves it completely.</p>
+
+<h2>Testing a headset microphone</h2>
+<p>A headset has two halves and this page tests only one of them. If you are checking a gaming or call headset before an important session, run the <a href="/">microphone test</a> as well — the mic boom is a separate component with its own failure modes, and headsets often work perfectly in one direction while being silent in the other.</p>
+<div class="note"><p>Wearing headphones while testing your microphone is also the correct way to judge echo, because it removes the loop from your speakers back into the mic.</p></div>
+</div>
+</section>
+
+<section style="background:var(--soft)">
+<div class="container">
+<div class="sec-head"><h2>More device tests</h2></div>
+<div class="cards"><a class="card" href="/"><div class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><path d="M12 17v4"/><path d="M8 21h8"/></svg></div><h3>Microphone Test</h3><p>Check that your mic is heard, at the right level, with no distortion.</p></a><a class="card" href="/webcam-test"><div class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="6"/><circle cx="12" cy="10" r="2"/><path d="M4 21h16"/></svg></div><h3>Webcam Test</h3><p>See your camera live, read its resolution and frame rate, take a snapshot.</p></a><a class="card" href="/speaker-test"><div class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg></div><h3>Speaker Test</h3><p>Left/right channel check, test tones and a full 20 Hz–20 kHz sweep.</p></a><a class="card" href="/keyboard-test"><div class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M8 14h8"/></svg></div><h3>Keyboard Test</h3><p>Find dead, stuck or ghosting keys on a live on-screen keyboard.</p></a><a class="card" href="/mouse-test"><div class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="2" width="12" height="20" rx="6"/><path d="M12 6v4"/></svg></div><h3>Mouse Test</h3><p>Test every button, the scroll wheel and cursor tracking.</p></a><a class="card" href="/click-test"><div class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m4 4 7 16 2-6 6-2z"/></svg></div><h3>Click Speed Test</h3><p>Measure your clicks per second over 5, 10, 30 or 60 seconds.</p></a><a class="card" href="/double-click-test"><div class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m4 4 7 16 2-6 6-2z"/><path d="M17 3v3M20 6h-3"/></svg></div><h3>Double Click Test</h3><p>Detect a failing mouse switch that registers one click as two.</p></a><a class="card" href="/dead-pixel-test"><div class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8"/><circle cx="12" cy="11" r="1.6" fill="currentColor"/></svg></div><h3>Dead Pixel Test</h3><p>Full-screen solid colours that reveal dead and stuck pixels.</p></a></div>
+</div>
+</section>
+<section class="faq-sec">
+<div class="container">
+<h2>Headphone test FAQ</h2>
+<div class="faq-list"><details class="faq-item"><summary>How do I check if my headphones are wired the right way round?</summary><div class="faq-a"><p>Play the left-only tone with the headphones on your head as normal. Sound should appear in your left ear. If it appears in the right, the headphones or the cable are wired backwards, or your system's channel setting is reversed.</p></div></details><details class="faq-item"><summary>One earcup is quieter than the other — what causes that?</summary><div class="faq-a"><p>Most often a partly inserted 3.5 mm plug, dirt in the jack, or a damaged cable near the connector. Wiggle the plug gently while a tone plays; if the level changes, the connection is the problem, not the driver.</p></div></details><details class="faq-item"><summary>What frequency range should headphones cover?</summary><div class="faq-a"><p>Decent headphones reproduce roughly 20 Hz to 20 kHz, which is wider than most speakers because the driver sits right at your ear. You are more likely to run out of hearing than to run out of headphone.</p></div></details><details class="faq-item"><summary>Do Bluetooth headphones behave differently?</summary><div class="faq-a"><p>Yes. Bluetooth adds latency, and when the microphone is activated the connection drops to a low-quality mono profile that sounds noticeably worse. That is a limitation of Bluetooth itself and affects every wireless headset.</p></div></details><details class="faq-item"><summary>Can loud test tones damage my hearing?</summary><div class="faq-a"><p>Yes, if you push the volume. Sustained pure tones feel less loud than music but carry the same risk. Start at a low level and stop immediately if anything is uncomfortable.</p></div></details><details class="faq-item"><summary>Why do I hear a hiss when nothing is playing?</summary><div class="faq-a"><p>A constant hiss with no signal usually comes from the amplifier's noise floor, and it is more audible with sensitive in-ear monitors. On a laptop, a hiss that changes when you move the mouse points to electrical interference rather than the headphones.</p></div></details></div>
+</div>
+</section><section class="cta">
+<div class="container">
+<h2>Test your headset microphone</h2>
+<p>Record five seconds and hear exactly what your teammates or callers hear.</p>
+<a class="btn btn-lg" href="/">Open the microphone test</a>
+</div>
+</section></main><footer class="site-foot">
+<div class="container">
+  <div class="foot-grid"><div><h2 class="foot-h">Device Tests</h2><ul><li><a href="/">Microphone Test</a></li><li><a href="/webcam-test">Webcam Test</a></li><li><a href="/speaker-test">Speaker Test</a></li><li><a href="/headphone-test">Headphone Test</a></li><li><a href="/dead-pixel-test">Dead Pixel Test</a></li></ul></div><div><h2 class="foot-h">Input Tests</h2><ul><li><a href="/keyboard-test">Keyboard Test</a></li><li><a href="/mouse-test">Mouse Test</a></li><li><a href="/click-test">Click Speed Test</a></li><li><a href="/double-click-test">Double Click Test</a></li></ul></div><div><h2 class="foot-h">Fix Mic Problems</h2><ul><li><a href="/fix/microphone-not-working-windows-11">Windows 11 Mic Not Working</a></li><li><a href="/fix/microphone-not-working-mac">Mac Mic Not Working</a></li><li><a href="/fix/discord-mic-not-working">Discord Mic Not Working</a></li><li><a href="/fix/zoom-microphone-not-working">Zoom Mic Not Working</a></li><li><a href="/fix">All Fix Guides</a></li></ul></div><div><h2 class="foot-h">Site</h2><ul><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li><li><a href="/privacy">Privacy Policy</a></li><li><a href="/terms">Terms of Use</a></li><li><a href="/disclaimer">Disclaimer</a></li></ul></div></div>
+  <p class="foot-note">Every test on MicTest.live runs entirely inside your browser. Audio and video from your microphone and camera are processed on your device and never uploaded, recorded on a server, or shared with anyone.</p>
+  <p class="copy">© 2026 MicTest.live — free online device tests.</p>
+</div>
+</footer>
+<script src="/app.js" defer></script>
+</body>
+</html>

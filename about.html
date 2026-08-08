@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About MicTest.live — Free Browser Device Tests</title>
+<meta name="description" content="About MicTest.live: free browser-based tests for microphones, webcams, speakers, keyboards, mice and screens. No account, no uploads, everything runs on your device.">
+<link rel="canonical" href="https://mictest.live/about">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="MicTest.live">
+<meta property="og:title" content="About MicTest.live — Free Browser Device Tests">
+<meta property="og:description" content="About MicTest.live: free browser-based tests for microphones, webcams, speakers, keyboards, mice and screens. No account, no uploads, everything runs on your device.">
+<meta property="og:url" content="https://mictest.live/about">
+<meta property="og:image" content="https://mictest.live/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About MicTest.live — Free Browser Device Tests">
+<meta name="twitter:description" content="About MicTest.live: free browser-based tests for microphones, webcams, speakers, keyboards, mice and screens. No account, no uploads, everything runs on your device.">
+<meta name="twitter:image" content="https://mictest.live/assets/og-image.png">
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Who runs this site?", "acceptedAnswer": {"@type": "Answer", "text": "A small independent team that builds browser-based utilities. We are not affiliated with any hardware manufacturer, and we do not sell microphones or accept payment for recommendations."}}, {"@type": "Question", "name": "How is the site funded?", "acceptedAnswer": {"@type": "Answer", "text": "Through advertising on the pages. That is what keeps every tool free with no account, no limits and no paid tier."}}, {"@type": "Question", "name": "Do you collect my audio or video?", "acceptedAnswer": {"@type": "Answer", "text": "No. Every test runs entirely inside your browser using standard web APIs. Audio and video are processed on your device and never transmitted to us or anyone else."}}, {"@type": "Question", "name": "Can I suggest a tool?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, and several of the current tools started as reader suggestions. The contact page explains what makes a suggestion easy to act on."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mictest.live/"}, {"@type": "ListItem", "position": 2, "name": "About", "item": "https://mictest.live/about"}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="container head-in">
+  <a class="logo" href="/" aria-label="MicTest.live home">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><path d="M12 17v4"/><path d="M8 21h8"/>
+    </svg>
+    <span class="wm">Mic<em>Test</em></span>
+  </a>
+  <button class="burger" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="main-nav" id="mainNav" aria-label="Main"><ul><li><a href="/">Mic Test</a></li><li><a href="/webcam-test">Webcam</a></li><li><a href="/speaker-test">Speakers</a></li><li><a href="/keyboard-test">Keyboard</a></li><li><a href="/mouse-test">Mouse</a></li><li><a href="/fix">Fix Problems</a></li><li><a href="/guides">Guides</a></li></ul></nav>
+</div>
+</header>
+<main id="main"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> <i>/</i> <span>About</span></nav></div>
+<div class="page-head">
+<div class="container"><h1>About <em>MicTest.live</em></h1>
+<p class="lede">Free browser-based tests for the hardware you use every day, built to actually diagnose problems rather than just blink at you.</p></div>
+</div>
+<section>
+<div class="container prose">
+<h2>Why we built this</h2>
+<p>Search for a microphone test and you find pages that show a bar moving up and down. That confirms the device is alive. It does not tell you whether your level is too low, whether you are clipping, how loud your room is, or what you actually sound like to the person on the other end — which are the things people actually want to know.</p>
+<p>So we built tools that answer those questions. The microphone test shows the level in decibels with peak and average tracking, draws the waveform and the frequency spectrum, reads the device's real settings out of the browser, lets you toggle the three processing filters to hear their effect, and records five seconds so you can listen back. Then it gives you a plain-English verdict about what to change.</p>
+
+<h2>Everything runs on your device</h2>
+<p>This is not a policy we chose to adopt; it is how the tools are built. Your browser hands the microphone or camera stream directly to the page, the page analyses it with the Web Audio API and the canvas element, and the results are displayed. There is no upload step because there is no server that receives media. Close the tab and the stream ends and the recording is gone.</p>
+<p>You can verify this yourself. Open your browser's developer tools, switch to the network tab, and run any test on this site. You will see the page load and then nothing further — no media requests, no uploads, no telemetry carrying your audio.</p>
+
+<h2>What we cover</h2>
+<p>Nine tools at present: microphone, webcam, speakers, headphones, keyboard, mouse, click speed, double-click detection and screen pixels. Alongside them are eight troubleshooting guides for the platforms and applications where microphone problems most often appear, and a set of longer guides explaining the settings and trade-offs behind the tools.</p>
+<p>The troubleshooting guides are ordered by how often each fix turns out to be the answer, not by how technically interesting it is. That is why they start with checking for a physical mute switch rather than with reinstalling drivers.</p>
+
+<h2>What we do not do</h2>
+<p>We do not publish equipment rankings, "best microphone" lists or affiliate links. Those pages exist in abundance and their incentives are not aligned with giving you accurate advice. Where a specific product is named in our guides it is as an example of a category — a dynamic microphone, a multi-pattern condenser — rather than a recommendation to buy that model.</p>
+<p>We also do not require an account for anything. There is nothing to sign up for and no email to give us.</p>
+
+<h2>Accuracy and corrections</h2>
+<p>Settings paths change when operating systems update, and a guide that was correct last year can send you to a menu that no longer exists. If you find a step that does not match what you see on screen, tell us through the <a href="/contact">contact page</a> and include the version you are running. Correction reports get priority over everything else in the inbox, because a wrong instruction is worse than no instruction.</p>
+</div>
+</section>
+<section class="faq-sec">
+<div class="container">
+<h2>About this site</h2>
+<div class="faq-list"><details class="faq-item"><summary>Who runs this site?</summary><div class="faq-a"><p>A small independent team that builds browser-based utilities. We are not affiliated with any hardware manufacturer, and we do not sell microphones or accept payment for recommendations.</p></div></details><details class="faq-item"><summary>How is the site funded?</summary><div class="faq-a"><p>Through advertising on the pages. That is what keeps every tool free with no account, no limits and no paid tier.</p></div></details><details class="faq-item"><summary>Do you collect my audio or video?</summary><div class="faq-a"><p>No. Every test runs entirely inside your browser using standard web APIs. Audio and video are processed on your device and never transmitted to us or anyone else.</p></div></details><details class="faq-item"><summary>Can I suggest a tool?</summary><div class="faq-a"><p>Yes, and several of the current tools started as reader suggestions. The contact page explains what makes a suggestion easy to act on.</p></div></details></div>
+</div>
+</section></main><footer class="site-foot">
+<div class="container">
+  <div class="foot-grid"><div><h2 class="foot-h">Device Tests</h2><ul><li><a href="/">Microphone Test</a></li><li><a href="/webcam-test">Webcam Test</a></li><li><a href="/speaker-test">Speaker Test</a></li><li><a href="/headphone-test">Headphone Test</a></li><li><a href="/dead-pixel-test">Dead Pixel Test</a></li></ul></div><div><h2 class="foot-h">Input Tests</h2><ul><li><a href="/keyboard-test">Keyboard Test</a></li><li><a href="/mouse-test">Mouse Test</a></li><li><a href="/click-test">Click Speed Test</a></li><li><a href="/double-click-test">Double Click Test</a></li></ul></div><div><h2 class="foot-h">Fix Mic Problems</h2><ul><li><a href="/fix/microphone-not-working-windows-11">Windows 11 Mic Not Working</a></li><li><a href="/fix/microphone-not-working-mac">Mac Mic Not Working</a></li><li><a href="/fix/discord-mic-not-working">Discord Mic Not Working</a></li><li><a href="/fix/zoom-microphone-not-working">Zoom Mic Not Working</a></li><li><a href="/fix">All Fix Guides</a></li></ul></div><div><h2 class="foot-h">Site</h2><ul><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li><li><a href="/privacy">Privacy Policy</a></li><li><a href="/terms">Terms of Use</a></li><li><a href="/disclaimer">Disclaimer</a></li></ul></div></div>
+  <p class="foot-note">Every test on MicTest.live runs entirely inside your browser. Audio and video from your microphone and camera are processed on your device and never uploaded, recorded on a server, or shared with anyone.</p>
+  <p class="copy">© 2026 MicTest.live — free online device tests.</p>
+</div>
+</footer>
+<script src="/app.js" defer></script>
+</body>
+</html>
