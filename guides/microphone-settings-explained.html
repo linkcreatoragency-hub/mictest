@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Microphone Settings Explained: Gain, Rate, Bit Depth</title>
+<meta name="description" content="What sample rate, bit depth, gain, echo cancellation, noise suppression and auto gain control actually do — and which settings matter for calls, podcasts and music.">
+<link rel="canonical" href="https://mictest.live/guides/microphone-settings-explained">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="MicTest.live">
+<meta property="og:title" content="Microphone Settings Explained: Gain, Rate, Bit Depth">
+<meta property="og:description" content="What sample rate, bit depth, gain, echo cancellation, noise suppression and auto gain control actually do — and which settings matter for calls, podcasts and music.">
+<meta property="og:url" content="https://mictest.live/guides/microphone-settings-explained">
+<meta property="og:image" content="https://mictest.live/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Microphone Settings Explained: Gain, Rate, Bit Depth">
+<meta name="twitter:description" content="What sample rate, bit depth, gain, echo cancellation, noise suppression and auto gain control actually do — and which settings matter for calls, podcasts and music.">
+<meta name="twitter:image" content="https://mictest.live/assets/og-image.png">
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Microphone Settings Explained: Gain, Sample Rate and Bit Depth", "description": "What sample rate, bit depth, gain, echo cancellation, noise suppression and auto gain control actually do — and which settings matter for calls, podcasts and music.", "inLanguage": "en", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://mictest.live/guides/microphone-settings-explained"}, "datePublished": "2026-08-08", "dateModified": "2026-08-08", "author": {"@type": "Organization", "name": "MicTest.live", "url": "https://mictest.live"}, "publisher": {"@type": "Organization", "name": "MicTest.live", "url": "https://mictest.live", "logo": {"@type": "ImageObject", "url": "https://mictest.live/favicon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mictest.live/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://mictest.live/guides"}, {"@type": "ListItem", "position": 3, "name": "Microphone Settings Explained: Gain, Sample Rate and Bit Dep", "item": "https://mictest.live/guides/microphone-settings-explained"}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="container head-in">
+  <a class="logo" href="/" aria-label="MicTest.live home">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><path d="M12 17v4"/><path d="M8 21h8"/>
+    </svg>
+    <span class="wm">Mic<em>Test</em></span>
+  </a>
+  <button class="burger" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="main-nav" id="mainNav" aria-label="Main"><ul><li><a href="/">Mic Test</a></li><li><a href="/webcam-test">Webcam</a></li><li><a href="/speaker-test">Speakers</a></li><li><a href="/keyboard-test">Keyboard</a></li><li><a href="/mouse-test">Mouse</a></li><li><a href="/fix">Fix Problems</a></li><li><a href="/guides" class="on">Guides</a></li></ul></nav>
+</div>
+</header>
+<main id="main"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> <i>/</i> <a href="/guides">Guides</a> <i>/</i> <span>Microphone Settings Explained: Gain, Sample …</span></nav></div>
+<div class="page-head">
+<div class="container"><h1>Microphone Settings Explained: Gain, Sample Rate and Bit Depth</h1></div>
+</div>
+<section>
+<div class="container prose">
+<p class="muted" style="margin-bottom:1.6em">Last updated 8 August 2026 — MicTest.live</p>
+
+<p>Open any microphone's properties and you are presented with numbers that sound technical and rarely come with an explanation. Sample rate, bit depth, gain, three kinds of processing. Most guides tell you to set them higher. That is usually wrong, and occasionally harmful. Here is what each one really does.</p>
+
+<h2>Sample rate</h2>
+<p>Sample rate is how many times per second the microphone's analogue signal is measured. 44,100 samples per second — 44.1 kHz — is the CD standard; 48 kHz is the video and broadcast standard and the default in most operating systems.</p>
+<p>The reason those numbers exist is a mathematical result: to capture a frequency accurately you need to sample at more than twice that frequency. Human hearing tops out around 20 kHz, so a little over 40 kHz captures everything anyone can hear. That is the entire justification for 44.1 kHz, and it is sufficient.</p>
+<p>Higher rates — 96 kHz, 192 kHz — capture frequencies nobody can hear, at the cost of double or quadruple the file size and processing load. They have genuine uses in production, mainly because slowing audio down for sound design preserves more detail. For a voice call or a podcast they change nothing you can perceive.</p>
+<div class="note"><p>Set 48 kHz and stop thinking about it. Matching your microphone and your system to the same rate avoids resampling, which is the only sample-rate decision that has an audible effect on a normal setup.</p></div>
+
+<h2>Bit depth</h2>
+<p>If sample rate is how often the signal is measured, bit depth is how precisely each measurement is recorded. 16-bit gives 65,536 possible levels; 24-bit gives about 16.7 million.</p>
+<p>What that buys you is dynamic range — the distance between the quietest sound you can capture and the loudest before clipping. 16-bit provides around 96 dB, which comfortably exceeds what any room and microphone will deliver. 24-bit provides around 144 dB.</p>
+<p>The practical benefit of 24-bit is not better sound at a correct level; it is headroom for mistakes. Record too quietly at 16-bit and raising the level afterwards brings up audible noise. Do the same at 24-bit and there is enough resolution below your signal that the recovery is clean. That is why studios record at 24-bit and deliver at 16-bit.</p>
+
+<h2>Gain</h2>
+<p>Gain is the amount of amplification applied to the microphone signal before it is converted to digital, and it is the single most important setting on this page. Everything downstream is working with whatever gain captured.</p>
+<p>Too little gain and your voice sits close to the noise floor; raising it afterwards raises the noise with it. Too much and the loudest peaks exceed what the converter can represent, and those peaks are clipped flat — an unrecoverable distortion that sounds harsh and crackly.</p>
+<p>The target is peaks around −12 to −6 dBFS with an average near −20 dBFS. That leaves room for a sudden laugh or a raised voice without clipping, while staying well above the noise floor. The <a href="/">microphone test</a> shows all three numbers live so you can set this by eye in under a minute.</p>
+
+<h2>Echo cancellation</h2>
+<p>Acoustic echo cancellation removes sound that came from your own speakers from your microphone signal. The software knows what it just played, so when that signal reappears at the microphone a few milliseconds later it subtracts it.</p>
+<p>It exists for speakerphone situations, and there it is essential. It is unnecessary when you wear headphones, because there is no path from speaker to microphone. It also has a cost: the subtraction is imperfect and can slightly dull a voice, which is why it is switched off for recording.</p>
+
+<h2>Noise suppression</h2>
+<p>Noise suppression identifies steady background sound — fans, air conditioning, traffic hum — and removes it. Modern implementations use machine learning models trained to separate speech from everything else, and they are impressively good at constant noise.</p>
+<p>They are much weaker at sudden noise, because a door slam looks nothing like the steady profile they learned. And they have a characteristic failure mode: when your voice is quiet, the model can classify it as noise and remove it, so listeners hear you cutting in and out. If people say you keep dropping mid-sentence, this is the first thing to turn off.</p>
+
+<h2>Automatic gain control</h2>
+<p>AGC continuously adjusts the input level to keep you at a consistent loudness. It rescues people who move around while talking or who vary a lot in volume.</p>
+<p>The cost is that it raises the level during quiet passages, which raises the noise floor with it. You hear this as the room hiss swelling up between sentences and ducking when you speak — a distinctive pumping effect. Studio recordings almost always have AGC off with the gain set manually, because a consistent noise floor matters more than consistent loudness in material that will be edited.</p>
+
+<h2>What to actually use</h2>
+<table>
+<thead><tr><th>Setting</th><th>Video calls</th><th>Podcast / voiceover</th><th>Music</th></tr></thead>
+<tbody>
+<tr><td>Sample rate</td><td>48 kHz</td><td>48 kHz</td><td>48 kHz (96 kHz if your workflow needs it)</td></tr>
+<tr><td>Bit depth</td><td>16-bit is fine</td><td>24-bit</td><td>24-bit</td></tr>
+<tr><td>Gain</td><td>Peaks around −12 dB</td><td>Peaks around −6 dB</td><td>Peaks around −6 dB</td></tr>
+<tr><td>Echo cancellation</td><td>On (off with headphones)</td><td>Off</td><td>Off</td></tr>
+<tr><td>Noise suppression</td><td>On</td><td>Off — treat the room instead</td><td>Off</td></tr>
+<tr><td>Auto gain control</td><td>On</td><td>Off</td><td>Off</td></tr>
+</tbody>
+</table>
+<p>You can hear each of these decisions rather than take them on faith. The <a href="/">microphone test</a> lets you toggle all three processing options while watching the meter and recording short takes, so the difference between processed and raw is immediately obvious.</p>
+
+<h2>More guides</h2><div class="link-grid"><a href="/guides/microphone-for-streaming-and-calls">Choosing a Microphone for Streaming, Podcasts and Calls</a><a href="/guides/reduce-background-noise">How to Reduce Background Noise on Your Microphone</a><a href="/guides">All guides</a></div>
+</div>
+</section>
+<section class="cta">
+<div class="container">
+<h2>Try it on your own setup</h2>
+<p>Every claim on this page can be checked in about a minute with the microphone test.</p>
+<a class="btn btn-lg" href="/">Open the microphone test</a>
+</div>
+</section></main><footer class="site-foot">
+<div class="container">
+  <div class="foot-grid"><div><h2 class="foot-h">Device Tests</h2><ul><li><a href="/">Microphone Test</a></li><li><a href="/webcam-test">Webcam Test</a></li><li><a href="/speaker-test">Speaker Test</a></li><li><a href="/headphone-test">Headphone Test</a></li><li><a href="/dead-pixel-test">Dead Pixel Test</a></li></ul></div><div><h2 class="foot-h">Input Tests</h2><ul><li><a href="/keyboard-test">Keyboard Test</a></li><li><a href="/mouse-test">Mouse Test</a></li><li><a href="/click-test">Click Speed Test</a></li><li><a href="/double-click-test">Double Click Test</a></li></ul></div><div><h2 class="foot-h">Fix Mic Problems</h2><ul><li><a href="/fix/microphone-not-working-windows-11">Windows 11 Mic Not Working</a></li><li><a href="/fix/microphone-not-working-mac">Mac Mic Not Working</a></li><li><a href="/fix/discord-mic-not-working">Discord Mic Not Working</a></li><li><a href="/fix/zoom-microphone-not-working">Zoom Mic Not Working</a></li><li><a href="/fix">All Fix Guides</a></li></ul></div><div><h2 class="foot-h">Site</h2><ul><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li><li><a href="/privacy">Privacy Policy</a></li><li><a href="/terms">Terms of Use</a></li><li><a href="/disclaimer">Disclaimer</a></li></ul></div></div>
+  <p class="foot-note">Every test on MicTest.live runs entirely inside your browser. Audio and video from your microphone and camera are processed on your device and never uploaded, recorded on a server, or shared with anyone.</p>
+  <p class="copy">© 2026 MicTest.live — free online device tests.</p>
+</div>
+</footer>
+<script src="/app.js" defer></script>
+</body>
+</html>
